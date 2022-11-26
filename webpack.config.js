@@ -11,6 +11,7 @@ module.exports = {
   },
   mode: 'development',
   devServer: {
+    watchFiles: ('./src/*.html'),
     static: path.resolve(__dirname, './dist'),
     compress: true,
     port: 8080, //поменять порт
