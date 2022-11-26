@@ -1,7 +1,7 @@
 {
   "name": "yandex-hackathon",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "HR-лендинг для компании “Яндекс Практикум",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
