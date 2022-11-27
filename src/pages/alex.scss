@@ -177,3 +177,115 @@
   color: #fff;
   cursor: pointer;
 }
+
+//vacancy details
+.vacancy-details {
+  padding: 0 110px 220px;
+}
+
+.vacancy-details__container {
+  display: flex;
+  margin-top: 200px;
+  column-gap: 100px;
+}
+
+.vacancy-details__subtitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.vacancy-details__form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacancy-details__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.vacancy-details__input {
+  width: 520px;
+  height: 84px;
+  border: none;
+  border-bottom: 2px solid #111827;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+}
+
+.vacancy-details__checkbox-container {
+  margin: 40px 0 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 420px;
+  gap: 30px;
+}
+
+.vacancy-details__checkbox {
+  width: 39px;
+  height: 39px;
+}
+
+.vacancy-details__notification {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.24px;
+}
+
+.vacancy-details__notification_emphasize {
+  color: rgba(231, 84, 84, 1);
+}
+
+.vacancy-details__submit-btn {
+  align-self: center;
+  width: 257px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #111827;
+  cursor: pointer;
+}
+
+.vacancy-details__offer {
+  max-width: 592px;
+  list-style: none;
+  margin: 0;
+}
+
+.vacancy-details__offer-section:first-child {
+  margin-top: 0;
+}
+
+.vacancy-details__offer-section {
+  margin-top: 90px;
+}
+
+.vacancy-details__conditions-list {
+  list-style-type: disc;
+}
+
+.vacancy-details__condition-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.vacancy-details__condition {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  margin-left: 20px;
+}
