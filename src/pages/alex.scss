@@ -1,0 +1,92 @@
+.page {
+  max-width: 1440px;
+  margin: auto;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.section-title {
+  font-size: 60px;
+  font-weight: 700;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  font-weight: 600;
+}
+
+.team-roles {
+  padding: 0 110px 220px;
+}
+
+.team-roles__container {
+  display: flex;
+  gap: 130px;
+}
+
+.team-roles__btns-container {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.team-roles__btn {
+  width: calc(282px + 15px);
+  max-height: 40px;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.team-roles__btn-theme_dark {
+  background-color: #6D7280;
+  color: #fff;
+}
+
+.team-roles__btn-theme_light {
+  background-color: #F3F4F6;
+  color: #111827;
+}
+
+.team-roles__duties-list {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 282px 282px;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-roles__duty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  max-width: 282px;
+  height: 160px;
+  background-color: #6D7280;
+  border-radius: 6px;
+  padding: 32px;
+
+}
+
+.team-roles__duty-theme_dark {
+  color: #fff;
+}
+
+.team-roles__img-container {
+  display: flex;
+  margin-top: 20px;
+  height: 100%;
+}
+
+.team-roles__img {
+  width: 490px;
+  border-radius: 6px;
+}
