@@ -29,6 +29,29 @@ module.exports = {
         type: 'asset/resource'
       },
       {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name].[hash][ext]",
+        },
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          //     "style-loader",
+          // без него стабильнее работет, уберем
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: { sourceMap: true, importLoaders: 1 },
+          },
+          {
+            loader: "sass-loader",
+            options: { sourceMap: true },  // sourceMap уточню ещё, пока это не важно
+          },
+        ],
+      },
+      {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, {
           loader: 'css-loader',
@@ -45,6 +68,9 @@ module.exports = {
       template: './src/index.html' //поменять путь, если изменим структуру
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
   ]
 }
+// вроде как так принято. [name] равен тому, что у нас в первой строчке entry: { main.. Т.е. main
