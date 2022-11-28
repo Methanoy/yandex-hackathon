@@ -12,6 +12,11 @@
   font-weight: 700;
 }
 
+.img-container {
+  display: flex;
+  height: 100%;
+}
+
 .section-subtitle {
   font-size: 20px;
   font-weight: 700;
@@ -148,9 +153,7 @@
 }
 
 .team-roles__img-container {
-  display: flex;
   margin-top: 20px;
-  height: 100%;
 }
 
 .team-roles__img {
@@ -321,7 +324,6 @@
 }
 
 .no-vacancy__container {
-  display: flex;
   column-gap: 150px;
 }
 
@@ -337,4 +339,47 @@
 .no-vacancy__img {
   width: 590px;
   height: 400px;
+}
+
+//success-popup
+
+.success-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 140px;
+}
+
+.success-popup__img {
+  width: 590px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.success-popup__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+  margin: 0;
+  padding: 0;
+}
+
+.success-popup__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.success-popup__btn {
+  margin-top: 96px;
+  width: 293px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: #111827;
+  color: #fff;
 }
