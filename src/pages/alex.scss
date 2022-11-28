@@ -1,3 +1,5 @@
+//general selectors
+
 .page {
   max-width: 1440px;
   margin: auto;
@@ -15,6 +17,71 @@
   font-weight: 700;
   font-weight: 600;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 520px;
+  height: 84px;
+  border: none;
+  border-bottom: 2px solid #111827;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+}
+
+.form__input::placeholder {
+  color: #111827;
+}
+
+.checkbox-container {
+  margin: 40px 0 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 420px;
+  gap: 30px;
+}
+
+.form__checkbox {
+  width: 39px;
+  height: 39px;
+}
+
+.checkbox-notification {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.24px;
+}
+
+.checkbox-notification_emphasize {
+  color: rgba(231, 84, 84, 1);
+}
+
+.form__submit-btn {
+  align-self: center;
+  width: 257px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #111827;
+  cursor: pointer;
+}
+
+//team-roles
 
 .team-roles {
   padding: 0 110px 220px;
@@ -178,7 +245,7 @@
   cursor: pointer;
 }
 
-//vacancy details
+//vacancy-details
 .vacancy-details {
   padding: 0 110px 220px;
 }
@@ -195,65 +262,6 @@
   line-height: 150%;
   margin: 0;
   padding: 0;
-}
-
-.vacancy-details__form-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.vacancy-details__form {
-  display: flex;
-  flex-direction: column;
-}
-
-.vacancy-details__input {
-  width: 520px;
-  height: 84px;
-  border: none;
-  border-bottom: 2px solid #111827;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 20px;
-  letter-spacing: -0.24px;
-}
-
-.vacancy-details__checkbox-container {
-  margin: 40px 0 77px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  width: 420px;
-  gap: 30px;
-}
-
-.vacancy-details__checkbox {
-  width: 39px;
-  height: 39px;
-}
-
-.vacancy-details__notification {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: -0.24px;
-}
-
-.vacancy-details__notification_emphasize {
-  color: rgba(231, 84, 84, 1);
-}
-
-.vacancy-details__submit-btn {
-  align-self: center;
-  width: 257px;
-  height: 40px;
-  border: none;
-  border-radius: 6px;
-  color: #fff;
-  background-color: #111827;
-  cursor: pointer;
 }
 
 .vacancy-details__offer {
@@ -288,4 +296,45 @@
   font-size: 24px;
   line-height: 150%;
   margin-left: 20px;
+}
+
+//no-vacancy
+
+.no-vacancy {
+  padding: 0 110px 220px;
+}
+
+.no-vacancy__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+}
+
+.no-vacancy__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.no-vacancy__container {
+  display: flex;
+  column-gap: 150px;
+}
+
+.no-vacancy__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #545454;
+  padding-top: 24px;
+}
+
+.no-vacancy__img {
+  width: 590px;
+  height: 400px;
 }

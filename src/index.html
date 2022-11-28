@@ -199,15 +199,15 @@
 
       <section class="vacancy-details">
         <h2 class="section-title">
-          Наставник на курс </br>"Мидл фронтенд-разработчик"
+          Наставник на курс <br />"Мидл фронтенд-разработчик"
         </h2>
         <div class="vacancy-details__container">
-          <div class="vacancy-details__form-container">
+          <div class="form__container">
             <h3 class="vacancy-details__subtitle">Откликнуться на вакансию</h3>
-            <form class="vacancy-details__form">
+            <form class="form">
               <input
-                id="name-input"
-                class="vacancy-details__input"
+                id="vacancy-details__name-input"
+                class="form__input"
                 type="text"
                 name="name"
                 value=""
@@ -218,8 +218,8 @@
                 required
               />
               <input
-                id="email-input"
-                class="vacancy-details__input"
+                id="vacancy-details__email-input"
+                class="form__input"
                 type="email"
                 name="email"
                 value=""
@@ -230,8 +230,8 @@
                 required
               />
               <input
-                id="tel-input"
-                class="vacancy-details__input"
+                id="vacancy-details__tel-input"
+                class="form__input"
                 type="tel"
                 name="email"
                 value=""
@@ -242,8 +242,8 @@
                 required
               />
               <input
-                id="url-input"
-                class="vacancy-details__input"
+                id="vacancy-details__url-input"
+                class="form__input"
                 type="url"
                 name="url"
                 value=""
@@ -251,26 +251,26 @@
                 autocomplete="off"
                 required
               />
-              <div class="vacancy-details__checkbox-container">
+              <div class="checkbox-container">
                 <input
-                  id="accept-checkbox"
-                  class="vacancy-details__checkbox"
+                  id="vacancy-details__accept-checkbox"
+                  class="form__checkbox"
                   type="checkbox"
                   name="accept-checkbox"
                   checked
                   required
                 />
                 <label
-                  for="accept-checkbox"
-                  class="vacancy-details__notification"
+                  for="vacancy-details__accept-checkbox"
+                  class="checkbox-notification"
                   >Я даю согласие на обработку
-                  <span class="vacancy-details__notification_emphasize"
+                  <span class="checkbox-notification_emphasize"
                     >персональных данных</span
                   ></label
                 >
               </div>
               <button
-                class="vacancy-details__submit-btn"
+                class="form__submit-btn"
                 type="submit"
                 aria-label="Отправить форму"
               >
@@ -282,40 +282,160 @@
             <li class="vacancy-details__offer-section">
               <ul class="vacancy-details__conditions-list">
                 <h4 class="vacancy-details__condition-title">Обязанности</h4>
-                <li class="vacancy-details__condition">Удалённое сотрудничество и ежемесячное вознаграждение;</li>
+                <li class="vacancy-details__condition">
+                  Удалённое сотрудничество и ежемесячное вознаграждение;
+                </li>
                 <li class="vacancy-details__condition">
                   частичную занятость и возможность совмещать участие в проекте
                   с основной работой;
                 </li>
-                <li class="vacancy-details__condition">обмен опытом с разработчиками в нашем сообществе;</li>
-                <li class="vacancy-details__condition">обучение в Школе наставников Яндекс.Практикума.</li>
+                <li class="vacancy-details__condition">
+                  обмен опытом с разработчиками в нашем сообществе;
+                </li>
+                <li class="vacancy-details__condition">
+                  обучение в Школе наставников Яндекс.Практикума.
+                </li>
               </ul>
             </li>
             <li class="vacancy-details__offer-section">
               <ul class="vacancy-details__conditions-list">
                 <h4 class="vacancy-details__condition-title">Требования</h4>
-                <li class="vacancy-details__condition">Удалённое сотрудничество и ежемесячное вознаграждение;</li>
+                <li class="vacancy-details__condition">
+                  Удалённое сотрудничество и ежемесячное вознаграждение;
+                </li>
                 <li class="vacancy-details__condition">
                   частичную занятость и возможность совмещать участие в проекте
                   с основной работой;
                 </li>
-                <li class="vacancy-details__condition">обмен опытом с разработчиками в нашем сообществе;</li>
-                <li class="vacancy-details__condition">обучение в Школе наставников Яндекс.Практикума.</li>
+                <li class="vacancy-details__condition">
+                  обмен опытом с разработчиками в нашем сообществе;
+                </li>
+                <li class="vacancy-details__condition">
+                  обучение в Школе наставников Яндекс.Практикума.
+                </li>
               </ul>
             </li>
             <li class="vacancy-details__offer-section">
               <ul class="vacancy-details__conditions-list">
                 <h4 class="vacancy-details__condition-title">Условия</h4>
-                <li class="vacancy-details__condition">Удалённое сотрудничество и ежемесячное вознаграждение;</li>
+                <li class="vacancy-details__condition">
+                  Удалённое сотрудничество и ежемесячное вознаграждение;
+                </li>
                 <li class="vacancy-details__condition">
                   частичную занятость и возможность совмещать участие в проекте
                   с основной работой;
                 </li>
-                <li class="vacancy-details__condition">обмен опытом с разработчиками в нашем сообществе;</li>
-                <li class="vacancy-details__condition">обучение в Школе наставников Яндекс.Практикума.</li>
+                <li class="vacancy-details__condition">
+                  обмен опытом с разработчиками в нашем сообществе;
+                </li>
+                <li class="vacancy-details__condition">
+                  обучение в Школе наставников Яндекс.Практикума.
+                </li>
               </ul>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="no-vacancy">
+        <h3 class="no-vacancy__title">Нет подходяйщей вакансии ?</h3>
+        <p class="no-vacancy__text">
+          Заполните форму, а мы попробуем подобрать варианты
+        </p>
+        <div class="no-vacancy__container">
+          <img class="no-vacancy__img"
+          src="https://thypix.com/wp-content/uploads/2021/05/baby-yoda-83.jpg"
+          title="!!Добавить заглавие!!"
+          alt="!!Добавить описание картинки!!" />
+          <div class="form__container">
+            <form class="form" id="no-vacancy-form">
+              <input
+                id="no-vacancy__name-input"
+                class="form__input"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Имя Фамилия"
+                minlength="2"
+                maxlength="30"
+                autocomplete="off"
+                required
+              />
+              <input
+                id="no-vacancy__email-input"
+                class="form__input"
+                type="email"
+                name="email"
+                value=""
+                placeholder="Электронная почта"
+                minlength="2"
+                maxlength="30"
+                autocomplete="off"
+                required
+              />
+              <label for="no-vacancy-position" class="no-vacancy__label"
+                >Какое направление вам ближе ?</label
+              >
+              <select
+                id="no-vacancy-position"
+                class="form__input"
+                name="position"
+                form="no-vacancy-form"
+                form
+                required
+              >
+                <option values="">Должность</option>
+                <option values="marketing">Маркетинг</option>
+                <option values="design">Дизайн</option>
+                <option values="managment">Менеджмент</option>
+                <option values="programming">Программирование</option>
+                <option values="data-analitics">Анализ данных</option>
+              </select>
+              <label for="activity-type" class="no-vacancy__label"
+                >Чем вы хотите заниматься ?</label
+              >
+              <select
+                id="activity-type"
+                class="form__input"
+                name="activity"
+                form
+                required
+              >
+                <option values="">Вид деятельности</option>
+                <option values="lectures">Проводить лекции</option>
+                <option values="review">Проверять учеников</option>
+                <option values="curriculum">
+                  Разрабатывать учебную программу
+                </option>
+                <option values="methodology">
+                  Создавать методические материалы
+                </option>
+                <option values="experience">Делиться опытом</option>
+              </select>
+              <div class="checkbox-container">
+                <input
+                  id="accept-checkbox"
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="accept-checkbox"
+                  checked
+                  required
+                />
+                <label for="accept-checkbox" class="checkbox-notification"
+                  >Я даю согласие на обработку
+                  <span class="checkbox-notification_emphasize"
+                    >персональных данных</span
+                  ></label
+                >
+              </div>
+              <button
+                class="form__submit-btn"
+                type="submit"
+                aria-label="Отправить форму"
+              >
+                Отправить заявку
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
