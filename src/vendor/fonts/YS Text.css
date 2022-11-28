@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'YS Text';
+    src: local('YS Text-Regular'), local('YS Text-Regular'), url('YS Text-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'YS Text';
+  src: local('YS Text-Medium'), local('YS Text-Medium'), url('YS Text-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

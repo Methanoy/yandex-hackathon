@@ -1,3 +1,15 @@
+@import url('../vendor/normalize.css');
+@import url('../vendor/fonts/YS Text.css');
+
+// в general можно закинуть универсальные для всей вашей работы селекторы
+@import url('../blocks/general.scss');
+//если останется время, можно перевести на БЭМ
+@import url('../blocks/team-roles.scss');
+@import url('../blocks/current-offers.scss');
+@import url('../blocks/vacancy-details.scss');
+@import url('../blocks/no-vacancy.scss');
+@import url('../blocks/success-popup.scss');
+
 @import url(../blocks/footer.scss);
 @import url(../blocks/faq.scss);
 @import url(../blocks/not-found.scss);

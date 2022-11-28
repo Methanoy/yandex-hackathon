@@ -1,0 +1,39 @@
+//no-vacancy
+
+.no-vacancy {
+  padding: 0 110px 220px;
+}
+
+.no-vacancy__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0;
+  padding: 0;
+}
+
+.no-vacancy__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.no-vacancy__container {
+  column-gap: 150px;
+}
+
+.no-vacancy__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #545454;
+  padding-top: 24px;
+}
+
+.no-vacancy__img {
+  width: 590px;
+  height: 400px;
+}

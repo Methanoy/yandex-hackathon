@@ -1,0 +1,52 @@
+//vacancy-details
+.vacancy-details {
+  padding: 0 110px 220px;
+}
+
+.vacancy-details__container {
+  display: flex;
+  margin-top: 200px;
+  column-gap: 100px;
+}
+
+.vacancy-details__subtitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+}
+
+.vacancy-details__offer {
+  max-width: 592px;
+  list-style: none;
+  margin: 0;
+}
+
+.vacancy-details__offer-section:first-child {
+  margin-top: 0;
+}
+
+.vacancy-details__offer-section {
+  margin-top: 90px;
+}
+
+.vacancy-details__conditions-list {
+  list-style-type: disc;
+}
+
+.vacancy-details__condition-title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.vacancy-details__condition {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  margin-left: 20px;
+}
