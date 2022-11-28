@@ -1,0 +1,36 @@
+.benefits {
+  margin: 0 112px;
+}
+
+.benefits__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.benefit {
+  margin-right: 16px;
+}
+
+.benefit:last-child {
+  margin-right: 0;
+}
+
+.benefit_size_big {
+  height: 370px;
+  width: 600px;
+}
+
+.benefit_size_small {
+  height: 300px;
+  width: 291.28px;
+}
+
+.benefit__name {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.benefit__description {
+  font-size: 18px;
+}
