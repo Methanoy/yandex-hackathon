@@ -42,10 +42,13 @@
 }
 
 .main-page__button {
+  background-color: $button-background;
+  font-weight: $button-font-weight;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  color: $button-text-color;
   width: 209px;
   padding: 18.5px 38px;
-  background-color: $button-background;
-  color: $button-text-color;
   border-radius: 120px;
   text-align: center;
   cursor: pointer;
