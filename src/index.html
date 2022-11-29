@@ -10,7 +10,7 @@
 </head>
 
 <body class="page">
-  <main class="page">
+  <main class="main">
     <header class="header">
       <img class="header__logo">
       <a class="header__button">Текст</a>
@@ -488,61 +488,66 @@
           </div>
         </section>
 
-        <section class="videos">
+        <section class="videos slider-wrapper">
           <h2 class="videos__title">
             Истории ребят из нашей <br />
             команды
           </h2>
 
-          <button class="videos__button">&#8592;</button>
-          <button class="videos__button">&#8594;</button>
+          <button class="videos__button videos__button_left" id="slide-arrow-prev"></button>
+          <button class="videos__button videos__button_right" id="slide-arrow-next"></button>
 
-          <div class="videos__cards">
-            <div class="videos__card">
-              <img src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg" class="videos__iframe"></img>
-              <h3 class="videos__author">Владимир</h3>
-              <p class="videos__job">ревьюер курса Веб-разработчик</p>
-              <p class="videos__text">
-                Когда я учился писать код, не было онлайн-курсов и площадок с
-                наставниками, и было сложно ориентироваться, что действительно важно
-                знать и уметь, а что нет. Сейчас я делюсь своим опытом и, мне
-                кажется, делаю мир чуть лучше.
-              </p>
-            </div>
-            <div class="videos__card">
-              <img src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg" class="videos__iframe"></img>
-              <h3 class="videos__author">Владимир</h3>
-              <p class="videos__job">ревьюер курса Веб-разработчик</p>
-              <p class="videos__text">
-                Когда я учился писать код, не было онлайн-курсов и площадок с
-                наставниками, и было сложно ориентироваться, что действительно важно
-                знать и уметь, а что нет. Сейчас я делюсь своим опытом и, мне
-                кажется, делаю мир чуть лучше.
-              </p>
-            </div>
-            <div class="videos__card">
-              <img src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg" class="videos__iframe"></img>
-              <h3 class="videos__author">Владимир</h3>
-              <p class="videos__job">ревьюер курса Веб-разработчик</p>
-              <p class="videos__text">
-                Когда я учился писать код, не было онлайн-курсов и площадок с
-                наставниками, и было сложно ориентироваться, что действительно важно
-                знать и уметь, а что нет. Сейчас я делюсь своим опытом и, мне
-                кажется, делаю мир чуть лучше.
-              </p>
-            </div>
-          </div>
+          <img src="<%=require('./images/videos__arrow.svg')%>" class="videos__arrow-image" />
 
+          <ul class="videos__cards slides-container" id="slides-container">
+            <li class="slide">
+              <div class="videos__card">
+                <img src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg" class="videos__iframe" />
+                <h3 class="videos__author">Владимир</h3>
+                <p class="videos__job">ревьюер курса Веб-разработчик</p>
+                <p class="videos__text">
+                  Когда я учился писать код, не было онлайн-курсов и площадок с наставниками,
+                  и было сложно ориентироваться, что действительно важно знать и уметь, а что нет.
+                   Сейчас я делюсь своим опытом и, мне кажется, делаю мир чуть
+                  лучше.
+                </p>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="videos__card">
+                <img src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg" class="videos__iframe" />
+                <h3 class="videos__author">Ира</h3>
+                <p class="videos__job">старший код-ревьюер веб-факультета</p>
+                <p class="videos__text">
+                  Работа код-ревьюера с гибким графиком, благодаря ей я получаю дополнительный
+                  доход и могу делиться своим опытом. Ведь при написании кода важно не только
+                  большое количество практики, но и поддержка коллег.
+                </p>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="videos__card">
+                <img src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg" class="videos__iframe" />
+                <h3 class="videos__author">Стас</h3>
+                <p class="videos__job">ревьюер курса Data Engineering</p>
+                <p class="videos__text">
+                  С Практикумом меня объединяют любовь к технологиям, вера в онлайн-образование
+                  и желание помогать людям покорять новые горизонты. Сам почти полностью осваивал
+                  профессию онлайн, поэтому хочу и другим людям помочь в
+                  получении новых навыков.
+                </p>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <section class="faq">
           <h2 class="faq__title">Если остались вопросы</h2>
-          <br />
           <div class="faq__container">
             <ul class="faq__questions">
               <li class="faq__question">
-                <details class="faq__question-details">
-                  <summary class="faq__question-summary">Как планировать нагрузку?</summary>
+                <details class="faq__details">
+                  <summary class="faq__summary">Как планировать нагрузку?</summary>
                   <p class="faq__text">
                     Вы выбираете удобное время и определяете, сколько часов готовы
                     выделить для занятий, а наши кураторы подбирают вам студентов
@@ -555,10 +560,8 @@
                 <details class="faq__details">
                   <summary class="faq__summary">Сколько у меня будет студентов?</summary>
                   <p class="faq__text">
-                    Вы выбираете удобное время и определяете, сколько часов готовы
-                    выделить для занятий, а наши кураторы подбирают вам студентов
-                    под ваш график.При необходимости вы можете поменять график через
-                    кураторов.
+                    Вы сами выбираете, сколько студентов хотите вести одновременно.
+                    Студенты закрепляются за вами на всё время обучения, чтобы вы могли видеть их прогресс.
                   </p>
                 </details>
               </li>
@@ -566,48 +569,48 @@
                 <details class="faq__details">
                   <summary class="faq__summary">Как устроена оплата?</summary>
                   <p class="faq__text">
-                    Вы выбираете удобное время и определяете, сколько часов готовы
-                    выделить для занятий, а наши кураторы подбирают вам студентов
-                    под ваш график.При необходимости вы можете поменять график через
-                    кураторов.
+                    Ваша почасовая ставка фиксированная — 450₽. Одно занятие со студентом длится 30 минут.
+                    Выплаты поступают вам каждые две недели в соответствии со ставкой и количеством проведённых занятий.
                   </p>
                 </details>
               </li>
               <li class="faq__question">
                 <details class="faq__details">
-                  <summary class="faq__summary">Как устроена оплата?</summary>
+                  <summary class="faq__summary">Есть ли технические требования?</summary>
                   <p class="faq__text">
-                    Вы выбираете удобное время и определяете, сколько часов готовы
-                    выделить для занятий, а наши кураторы подбирают вам студентов
-                    под ваш график.При необходимости вы можете поменять график через
-                    кураторов.
+                    Работать можно только с ноутбука или компьютера — возможностей телефона не хватит для полноценного занятия.
+                    Вам понадобятся камера с хорошим качеством изображения,
+                    микрофон с шумоподавлением и наушники, а также стабильный интернет со скоростью не ниже 15 мбит/сек.
                   </p>
                 </details>
               </li>
             </ul>
           </div>
         </section>
-  </main>
-  <footer class="footer">
-    <hr class="footer__line" />
-    <nav class="footer__navigation">
-      <img src="https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson" class="footer__logo" />
-      <div class="footer__links">
-        <a href="/" class="footer__link">Помощь</a>
-        <a href="/" class="footer__link">Лицензия</a>
-        <a href="/" class="footer__link">Правовая информация</a>
-        <a href="/" class="footer__link">Для работодателей</a>
-        <a href="/" class="footer__link">Отзывы</a>
-      </div>
 
-      <div class="footer__socials">
-        <img src="https://static.thenounproject.com/png/3377598-200.png" class="footer__social-img" />
-        <img src="https://static.thenounproject.com/png/3377598-200.png" class="footer__social-img" />
-        <img src="https://static.thenounproject.com/png/3377598-200.png" class="footer__social-img" />
-      </div>
-    </nav>
-    <p class="footer__copyright">© 2022 Яндекс Практикум</p>
-  </footer>
+        <!-- Перенести footer из main, почему-то появляется пространство белое иначе -->
+        <footer class="footer">
+          <hr class="footer__line" />
+          <nav class="footer__navigation">
+            <img src="<%=require('./images/footer__yandex-logo.png')%>" class="footer__logo" />
+            <div class="footer__links">
+              <a href="/" class="footer__link">Помощь</a>
+              <a href="/" class="footer__link">Лицензия</a>
+              <a href="/" class="footer__link">Правовая информация</a>
+              <a href="/" class="footer__link">Для работодателей</a>
+              <a href="/" class="footer__link">Отзывы</a>
+            </div>
+
+            <div class="footer__socials">
+              <img src="https://static.thenounproject.com/png/3377598-200.png" class="footer__social-img" />
+              <img src="https://static.thenounproject.com/png/3377598-200.png" class="footer__social-img" />
+              <img src="https://static.thenounproject.com/png/3377598-200.png" class="footer__social-img" />
+            </div>
+          </nav>
+          <p class="footer__copyright">© 2022 Яндекс Практикум</p>
+        </footer>
+  </main>
+
 </body>
 
 </html>

@@ -1,20 +1,22 @@
 .faq {
-  max-height: 1024px;
+  max-height: 1557px;
   max-width: 1440px;
-  margin: 127px 112px 0 112px;
+  padding: 127px 121px 0 121px;
+  background-color: #f7f7f8;
 }
 
 .faq__title {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 140%;
-  margin: 0 0 134px 0;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0 0 102px 0;
 }
 
 .faq__container {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding-bottom: 100px;
 }
 
 .faq__questions {
@@ -26,7 +28,9 @@
 .faq__text {
   font-weight: 400;
   font-size: 24px;
-  max-width: 70%;
+  max-width: 61%;
+  line-height: 120%;
+  padding-top: 6px;
 }
 
 .faq__summary::-webkit-details-marker {
@@ -42,35 +46,35 @@
 }
 
 .faq__summary {
-  display: inline-block;
-  padding: 0.3em 0.5em 0.3em 0.4em;
-  font-size: 1.4em;
+  display: flex;
+  padding: 0 0 35px 0;
   cursor: pointer;
-  border-bottom: 1px solid black;
-  font-weight: 700;
+  border-bottom: 2px solid black;
+  font-weight: 500;
   font-size: 40px;
-  line-height: 140%;
+  line-height: 120%;
+  max-width: 1182px;
+  justify-content: space-between;
 }
 
 .faq__summary:after {
-  content: "+";
-  margin-left: 0.3em;
-  display: inline-block;
-
+  content: url(../../images/faq__plus.png);
   transition: transform 0.5s;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  margin: 0;
 }
+
+// .faq__summary:hover:after {
+//   background-color: #000;
+//   opacity: .5;
+//   border-radius: 50%;
+// }
+// постараться сделать фон при наведении (смена рисунка может)
 
 .faq__details[open] > .faq__summary:after {
-  transform: scale(1, -1) rotate(30deg);
-}
-
-.faq__summary ~ * {
-  padding: 0 1em 0 1em;
-}
-
-.faq__summary:focus {
-  outline: 0;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3), inset 0 0 2px rgba(0, 0, 0, 0.3);
+  transform: rotateZ(-45deg);
 }
 
 .faq__details[open] .faq__summary ~ * {
@@ -88,5 +92,6 @@
 
 .faq__details {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
+

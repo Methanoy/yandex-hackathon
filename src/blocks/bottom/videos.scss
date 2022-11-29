@@ -1,15 +1,87 @@
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slides-container {
+  height: calc(100vh - 2rem);
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+
+.slides-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+/* WebKit */
+.slides-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .videos {
   max-height: 1024px;
   max-width: 1440px;
   padding: 100px 0 100px 120px;
   background-color: #f7f7f8;
+  position: relative;
 }
 
 .videos__title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 48px;
   line-height: 120%;
-
+  margin: 0 0 43px 0;
 }
 
 .videos__button {
@@ -18,31 +90,54 @@
   border-radius: 50%;
   background-color: white;
   font-size: 26px;
-  margin-right: 28px;
+  margin: 0 28px 0 0;
   transition: background-color 0.8s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.videos__button_left {
+  background-image: url(../../images/videos__button-left.svg);
+}
+
+.videos__button_right {
+  background-image: url(../../images/videos__button-right.svg);
 }
 
 .videos__button:hover {
-background-color: antiquewhite;
-transition: background-color 0.6s ease;
-cursor: pointer;
+  background-color: antiquewhite;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.videos__arrow-image {
+  width: 240px;
+  height: 80px;
+  position: absolute;
+  top: 219px;
+  left: 340px;
+  margin: 0;
 }
 
 .videos__cards {
   display: flex;
   flex-direction: row;
   margin-top: 45px;
-  width: fit-content;
+ width: fit-content;
+ margin: 40px 0 0 0;
 }
 
 .videos__card {
   max-width: 488px;
   max-height: 555px;
-  margin-right: 12px;
+  margin-right: 19px;
   background: #ffffff;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
+  min-height: 555px;
+  height: fit-content;
+  width: 488px;
 }
 
 .videos__iframe {
@@ -71,7 +166,6 @@ cursor: pointer;
 }
 
 .videos__text {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
