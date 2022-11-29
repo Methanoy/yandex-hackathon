@@ -3,10 +3,20 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 112px;
+  margin: 40px 112px 91px;
 }
 
 .header__logo {
   width: 155px;
   height: 26px;
+}
+
+.header__button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  border-radius: 20px;
+  padding: 9px 16px;
+  background-color: black;
+  color: white;
 }
