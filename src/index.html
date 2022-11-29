@@ -46,7 +46,7 @@
       <div class="benefits__section">
         <div class="benefit benefit_size_small">
           <h3 class="benefit__name">Общаться в EdTech</h3>
-          <p class="benefit__description">ССтанете частью сообщества экспертов и посмотрите на мир онлайн-образования
+          <p class="benefit__description">Станете частью сообщества экспертов и посмотрите на мир онлайн-образования
             изнутри</p>
         </div>
         <div class="benefit benefit_size_small">
@@ -69,6 +69,7 @@
       <h2 class="faculties__title">Помогаем развиваться по направлениям</h2>
       <div class="faculties__container">
         <div class="faculty">
+          <!-- //прописать альты -->
           <h3 class="faculty__name">Программирование</h3>
           <img class="faculty__image" src="<%=require('./images/faculties/pic-programming.svg')%>" alt="">
         </div>
@@ -96,31 +97,34 @@
     <section class="process">
       <h2 class="process__title">Как стать экспертом Практикума</h2>
       <div class="stages">
-        <div class="stage">
-          <img class="stage__image">
+        <div class="stage stage_number_one">
+          <img class="stage__image stage__image_number_one" src="<%=require('./images/process/stage-one.svg')%>" alt="">
           <p class="stage__name">Выберите роль</p>
-          <p class="stage__description">Определитесь, что вам ближе: наставник или ревьюер?</p>
+          <p class="stage__description">Определитесь с курсом и поймите, что ближе: быть наставником или ревьюером</p>
         </div>
-        <div class="stage">
-          <img class="stage__image">
+        <div class="stage stage_number_two">
+          <img class="stage__image stage__image_number_two" src="<%=require('./images/process/stage-two.svg')%>" alt="">
           <p class="stage__name">Заполните заявку</p>
-          <p class="stage__description">Начать можно прямо сейчас. Даже если нет вакснсий, мы свяжемся с вами</p>
+          <p class="stage__description">Начать можно прямо сейчас. Даже если нет вакансий, мы свяжемся с вами</p>
         </div>
-        <div class="stage">
-          <img class="stage__image">
-          <p class="stage__name">Пройдите отбор и бесплатное обучение</p>
-          <p class="stage__description">Пригласим на двухнедельное обучение для прокачки софтов</p>
+        <div class="stage stage_number_three">
+          <img class="stage__image stage__image_number_three" src="<%=require('./images/process/stage-three.svg')%>" alt="">
+          <p class="stage__name">Пройдите обучение</p>
+          <p class="stage__description">Пригласим на двухнедельное бесплатное обучение для прокачки софтов</p>
         </div>
-        <div class="stage">
-          <img class="stage__image">
-          <p class="stage__name">Начните делиться знаниями</p>
-          <p class="stage__description">Студенты Практикума ждут опытных коллег на курсах</p>
+        <div class="stage stage_number_four">
+          <img class="stage__image stage__image_number_four" src="<%=require('./images/process/stage-four.svg')%>" alt="">
+          <p class="stage__name">Делитесь знаниями</p>
+          <p class="stage__description">Студенты Практикума ждут поддержки опытных коллег на курсах</p>
         </div>
       </div>
       <div class="start">
-        <p class="start__text">Присоединяйтесь и встречайте своих первых студентов онлайн</p>
+
+        <p class="start__text">Станьте частью команды и вдохновляйте своих первых студентов</p>
         <!-- <img class="start__image"> -->
-        <a class="start__link">Начать</a>
+        <a class="start__link">Стать частью команды</a>
+        <img class="start__image start__image_left" src="<%=require('./images/process/dinasaur-left.svg')%>" alt="Динозавр">
+        <img class="start__image start__image_right" src="<%=require('./images/process/dinasaur-right.svg')%>" alt="Динозавр">
       </div>
     </section>
     <section class="team-roles">
