@@ -1,7 +1,10 @@
+@import './constants.scss';
+
 .main-page {
   display: flex;
   flex-direction: row;
-  margin: 0 112px;
+  margin: $side-margin;
+  margin-bottom: 127px;
   justify-content: center;
   align-items: center;
 }
@@ -10,26 +13,39 @@
   display: flex;
   flex-direction: column;
   margin-right: 138px;
-  max-width: 488px;
 }
 
 .main-page__title {
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 1.3;
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 1.2;
+  margin: 0;
   margin-bottom: 16px;
+  width: 608px;
 }
 
 .main-page__message {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
+  color: #858585;
   margin-bottom: 48px;
+  width: 488px;
 }
 
+//анимация
 .main-page__image {
   height: 425px;
   width: 590px;
-  margin: 117.5px 0;
-  background-color: gainsboro;
+  margin: 0;
+  background-color: white;
+}
+
+.main-page__button {
+  width: 209px;
+  padding: 18.5px 38px;
+  background-color: $button-background;
+  color: $button-text-color;
+  border-radius: 120px;
+  text-align: center;
 }

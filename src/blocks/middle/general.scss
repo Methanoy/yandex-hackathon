@@ -1,9 +1,11 @@
 //general selectors
+@import '../top/constants.scss';
 
 .page {
   max-width: 1440px;
   margin: auto;
   font-family: "YS Text", Arial, sans-serif;
+  background-color: $background-color;
 }
 
 .section-title {
