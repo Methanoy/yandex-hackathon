@@ -1,0 +1,35 @@
+.main-page {
+  display: flex;
+  flex-direction: row;
+  margin: 0 112px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page__info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 138px;
+  max-width: 488px;
+}
+
+.main-page__title {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.main-page__message {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 48px;
+}
+
+.main-page__image {
+  height: 425px;
+  width: 590px;
+  margin: 117.5px 0;
+  background-color: gainsboro;
+}
