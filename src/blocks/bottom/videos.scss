@@ -37,8 +37,8 @@ cursor: pointer;
 }
 
 .videos__card {
-  width: 488px;
-  height: 555px;
+  max-width: 488px;
+  max-height: 555px;
   margin-right: 12px;
   background: #ffffff;
   border-radius: 24px;
