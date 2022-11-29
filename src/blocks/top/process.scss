@@ -118,7 +118,7 @@
   text-align: center;
 }
 
-.start__link {
+.start__button {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
@@ -127,6 +127,12 @@
   padding: 18px 62px;
   margin-bottom: 32px;
   border-radius: 120px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $button-hover-opacity;
+    transition: $button-hover-transition;
+  }
 }
 
 .start__image {

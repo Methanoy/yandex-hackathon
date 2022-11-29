@@ -48,4 +48,10 @@
   color: $button-text-color;
   border-radius: 120px;
   text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $button-hover-opacity;
+    transition: $button-hover-transition;
+  }
 }

@@ -1,3 +1,5 @@
+@import './constants.scss';
+
 .header {
   display: flex;
   flex-direction: row;
@@ -9,6 +11,12 @@
 .header__logo {
   width: 155px;
   height: 26px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $button-hover-opacity;
+    transition: $button-hover-transition;
+  }
 }
 
 .header__button {
@@ -19,4 +27,10 @@
   padding: 9px 16px;
   background-color: black;
   color: white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $button-hover-opacity;
+    transition: $button-hover-transition;
+  }
 }
