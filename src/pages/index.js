@@ -50,10 +50,12 @@ for (let i = 0; i < selectSingleLabels.length; i++) {
 
 nextButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
+  const part = slideWidth/4
+  slidesContainer.scrollLeft += part;
 });
 
 prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
+  const part = slideWidth/4
+  slidesContainer.scrollLeft -= part;
 });
