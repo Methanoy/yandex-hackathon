@@ -23,31 +23,51 @@
 }
 
 .faculty {
-  width: 100%;
-  max-width: 307px;
+  max-width: 386px;
   height: 234px;
   background-color: $card-color;
   border-radius: 15px;
-  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 44px 40px 32px;
+  position: relative;
+
+  &:last-child .faculty__description {
+    visibility: visible;
+  }
+
+  &:last-child .faculty__button {
+    visibility: visible;
+  }
+
+  &:hover .faculty__description {
+    visibility: visible;
+  }
+
+  &:hover .faculty__button {
+    visibility: visible;
+  }
+
+  &:hover .faculty__image {
+    visibility: hidden;
+  }
 }
 
 .faculty__name {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.3;
-  margin: 0;
-  margin-bottom: 32px;
+  margin: 0 auto 0 0;
 }
 
 .faculty__description {
-  margin: 0;
-  margin-bottom: 76px;
+  margin: 32px 0 auto;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
+  visibility: hidden;
 }
 
 .faculty__button {
@@ -57,14 +77,24 @@
   line-height: $button-line-height;
   color: $button-text-color;
   border-radius: 120px;
-  padding: 18.5px 95px;
   text-align: center;
   cursor: pointer;
+  ;
+  padding: 8.5px 50px;
+  visibility: hidden;
 
   &:hover {
     background-color: $button-hover-background;
   }
 }
+
+.faculty__image {
+  position: absolute;
+  bottom: 32px;
+  width: 172px;
+  height: 140px;
+}
+
 
 @media screen and (max-width: 767px) {
   .faculties {
