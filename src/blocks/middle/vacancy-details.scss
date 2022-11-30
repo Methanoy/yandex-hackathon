@@ -1,18 +1,26 @@
 //vacancy-details
 .vacancy-details {
-  padding: 0 110px 220px;
+  padding: 148px 110px 160px;
+}
+
+.vacancy-details__title {
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
 }
 
 .vacancy-details__container {
   display: flex;
-  margin-top: 200px;
-  column-gap: 100px;
+  margin-top: 160px;
+  column-gap: 122px;
 }
 
 .vacancy-details__subtitle {
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 150%;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
   margin: 0;
   padding: 0;
 }
@@ -21,6 +29,7 @@
   max-width: 592px;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .vacancy-details__offer-section:first-child {
@@ -32,15 +41,16 @@
 }
 
 .vacancy-details__conditions-list {
-  list-style-type: disc;
+  list-style: none;
+  padding: 0;
 }
 
 .vacancy-details__condition-title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   padding: 0;
 }
 
@@ -48,5 +58,34 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 150%;
-  margin-left: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .vacancy-details__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .vacancy-details__container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    row-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .vacancy-details__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .vacancy-details__container {
+    margin-top: 58px;
+  }
 }

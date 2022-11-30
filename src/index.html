@@ -1,18 +1,949 @@
 <!-- не добавлять тег link со ссылкой на стили -->
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yandex hackathon</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yandex hackathon</title>
-</head>
 
 <body class="page">
   <main class="main">
 
+    <header class="header">
+      <a href="https://practicum.yandex.ru/" target="_blank"><img class="header__logo"
+          src="<%=require('./images/logo.svg')%>" alt="Яндекс Практикум"></a>
+      <a class="header__button" href="#">В профиль</a>
+    </header>
 
+    <section class="main-page">
+      <div class="main-page__info">
+        <h1 class="main-page__title">Станьте наставником или ревьювером</h1>
+        <p class="main-page__message">
+          Делитесь своим опытом в программировании, анализе данных,
+          менеджменте, маркетинге или дизайне и получайте дополнительный
+          доход.
+        </p>
+        <a class="main-page__button" href="#">Хочу делиться знаниями</a>
+        <img class="main-page__image" src="<%=require('./images/main-page/people.png')%>">
+      </div>
+      <img class="main-page__image" />
+    </section>
+
+    <section class="benefits">
+      <h2 class="benefits__title">В роли эксперта Практикума вы будете</h2>
+      <div class="benefits__section">
+        <div class="benefit benefit_size_big">
+          <h3 class="benefit__name">Менять жизнь людей к лучшему</h3>
+          <p class="benefit__description">Тысячи наших студентов нуждаются в ваших знаниях и опыте — не бойтесь ими
+            делиться.</p>
+          <img class="benefit__image" src="<%=require('./images/benefits/pic-robot.svg')%>" alt="Робот">
+        </div>
+        <div class="benefit benefit_size_big">
+          <h3 class="benefit__name">Иметь доход в среднем от 35 до 50 тысяч руб. в месяц</h3>
+          <p class="benefit__description">Удаленно, 2–3 часа в день, график выберете сами.</p>
+          <img class="benefit__image" src="<%=require('./images/benefits/pic-yoda.png')%>" alt="Медитирующий Йода">
+        </div>
+      </div>
+      <div class="benefits__section">
+        <div class="benefit benefit_size_small">
+          <h3 class="benefit__name">Общаться в EdTech</h3>
+          <p class="benefit__description">Станете частью сообщества экспертов и посмотрите на мир онлайн-образования
+            изнутри</p>
+        </div>
+        <div class="benefit benefit_size_small">
+          <h3 class="benefit__name">Учиться новому</h3>
+          <p class="benefit__description">Узнаете, как давать обратную связь, выступать на публике и мотивировать людей
+          </p>
+        </div>
+        <div class="benefit benefit_size_small">
+          <h3 class="benefit__name">Развивать личный бренд</h3>
+          <p class="benefit__description">Публикуйте статьи в блоге Практикума и выступайте на мероприятиях, чтобы о вас
+            узнали как об эксперте</p>
+        </div>
+        <div class="benefit benefit_size_small">
+          <h3 class="benefit__name">Расти внутри роли</h3>
+          <p class="benefit__description">Вы сможете стать старшим наставником или сеньор-ревьювером</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faculties">
+      <h2 class="faculties__title">Помогаем развиваться по направлениям</h2>
+      <div class="faculties__container">
+        <div class="faculty">
+          <h3 class="faculty__name">Менеджмент</h3>
+          <p class="faculty__description">Интернет-маркетинг и управление трафиком</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-management.svg')%>" alt="">
+        </div>
+        <div class="faculty">
+          <h3 class="faculty__name">Дизайн</h3>
+          <p class="faculty__description">Графический, коммуникационный, для интерфейсов и продуктов</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-design.svg')%>" alt="">
+        </div>
+        <div class="faculty">
+          <h3 class="faculty__name">Анализ данных</h3>
+          <p class="faculty__description">SQL, аналитика, Data Science  и архитектура данных</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-data-analysis.svg')%>" alt="">
+        </div>
+        <div class="faculty">
+          <h3 class="faculty__name">Маркентинг</h3>
+          <p class="faculty__description">Интернет-маркетинг и управление трафиком</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-marketing.svg')%>" alt="">
+        </div>
+        <div class="faculty">
+          <h3 class="faculty__name">Программирование</h3>
+          <p class="faculty__description">Тестирование, фронтенд, бэкенд, DevOps и алгоритмы</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-programming.svg')%>" alt="">
+        </div>
+        <div class="faculty">
+          <h3 class="faculty__name">Все курсы</h3>
+          <p class="faculty__description">76 программ для обучения онлайн</p>
+          <a class="faculty__button">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <h2 class="process__title">Как стать экспертом Практикума</h2>
+      <div class="stages">
+        <div class="stage stage_number_one">
+          <img class="stage__image stage__image_number_one" src="<%=require('./images/process/stage-one.svg')%>"
+            alt="Очки">
+          <p class="stage__name">Выберите роль</p>
+          <p class="stage__description">Определитесь с курсом и поймите, что ближе: быть наставником или ревьюером</p>
+        </div>
+        <div class="stage stage_number_two">
+          <img class="stage__image stage__image_number_two" src="<%=require('./images/process/stage-two.svg')%>"
+            alt="Человек">
+          <p class="stage__name">Заполните заявку</p>
+          <p class="stage__description">Начать можно прямо сейчас. Даже если нет вакансий, мы свяжемся с вами</p>
+        </div>
+        <div class="stage stage_number_three">
+          <img class="stage__image stage__image_number_three" src="<%=require('./images/process/stage-three.svg')%>"
+            alt="Путь">
+          <p class="stage__name">Пройдите обучение</p>
+          <p class="stage__description">Пригласим на двухнедельное бесплатное обучение для прокачки софтов</p>
+        </div>
+        <div class="stage stage_number_four">
+          <img class="stage__image stage__image_number_four" src="<%=require('./images/process/stage-four.svg')%>"
+            alt="Люди, смотрящие на график">
+          <p class="stage__name">Делитесь знаниями</p>
+          <p class="stage__description">Студенты Практикума ждут поддержки опытных коллег на курсах</p>
+        </div>
+      </div>
+      <div class="start">
+
+        <p class="start__text">Станьте частью команды и вдохновляйте своих первых студентов</p>
+        <a class="start__button" href="#">Стать частью команды</a>
+        <img class="start__image start__image_left" src="<%=require('./images/process/dinasaur-left.svg')%>"
+          alt="Динозавр">
+        <img class="start__image start__image_right" src="<%=require('./images/process/dinasaur-right.svg')%>"
+          alt="Динозавр">
+      </div>
+    </section>
+
+    <section class="team-roles">
+      <h2 class="section-title">Роли в нашей команде</h2>
+      <h3 class="section-subtitle">Выберите, что вам ближе</h3>
+      <div class="team-roles__container">
+
+        <div class="team-roles__info-container">
+          <h2 class="section-title">Роли в нашей команде</h2>
+          <div class="team-roles__container">
+            <div class="team-roles__btns-container">
+              <button
+                class="team-roles__btn team-roles__btn_enabled"
+                aria-label="Наставник"
+              >
+                Наставник
+              </button>
+              <button
+                class="team-roles__btn team-roles__btn_disabled"
+                aria-label="Ревьювер"
+              >
+                Ревьювер
+              </button>
+            </div>
+            <div class="team-roles__arrow-img"></div>
+          </div>
+          <ul class="team-roles__duties-list">
+            <!-- плитки Наставника -->
+            <li class="team-roles__duty">
+              Помогает студентам ставить цели, рефлексировать и делать выводы
+            </li>
+            <li class="team-roles__duty">
+              Проводит вебинары 2 раза в месяц и дает обратную связь по работам
+              студентов
+            </li>
+            <li class="team-roles__duty">
+              Отвечает на вопросы студентов в чате
+            </li>
+            <li class="team-roles__duty">
+              Делится опытом и мотивиует своим примером
+            </li>
+            <!-- плитки Ревьюера -->
+            <!-- <li class="team-roles__duty">
+              Проверяет код и проекты студентов
+            </li>
+            <li class="team-roles__duty">
+              Простыми словами объясняет им их ошибки
+            </li>
+            <li class="team-roles__duty">
+              Дает корректирующую обратную связь
+            </li>
+            <li class="team-roles__duty">
+              Оценивает работы — зачёт/незачёт
+            </li> -->
+          </ul>
+        </div>
+      </section>
+
+      <section class="current-offers">
+        <h2 class="section-title">Наши открытые предложения</h2>
+        <div class="current-offers__container">
+          <div class="current-offers__btns-container">
+            <button
+              class="current-offers__btn current-offers__btn_disabled"
+              aria-label="Для наставников"
+            >
+              Для наставников
+            </button>
+            <button
+              class="current-offers__btn current-offers__btn_enabled"
+              aria-label="Для ревьюверов"
+            >
+              Для ревьюверов
+            </button>
+          </div>
+          <div class="current-offers__arrow-img"></div>
+        </div>
+        <ul class="current-offers__list">
+          <li class="current-offers__faculty">
+            <details>
+              <summary class="current-offers__summary">
+                <h3 class="current-offers__summary-title">Программирование</h3>
+                <button
+                  class="current-offers__summary-btn"
+                  aria-label="Открыть список вакансий"
+                ></button>
+              </summary>
+              <ul class="current-offers__list">
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Мидл фронтенд-разработчик"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [В среднем 35 000 ₽ в месяц]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Мидл фронтенд-разработчик"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [В среднем 35 000 ₽ в месяц]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Мидл фронтенд-разработчик"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [В среднем 35 000 ₽ в месяц]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="current-offers__faculty">
+            <details>
+              <summary class="current-offers__summary">
+                <h3 class="current-offers__summary-title">Анализ данных</h3>
+                <button
+                  class="current-offers__summary-btn"
+                  aria-label="Открыть список вакансий"
+                ></button>
+              </summary>
+              <ul class="current-offers__list">
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Вакансий нет, но мы их анализируем
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      Напишите нам
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="current-offers__faculty">
+            <details>
+              <summary class="current-offers__summary">
+                <h3 class="current-offers__summary-title">Дизайн</h3>
+                <button class="current-offers__summary-btn"></button>
+              </summary>
+              <ul class="current-offers__list">
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Дизайнер-маг"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [В среднем бесценна]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Дизайнер-маг"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [В среднем бесценна]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="current-offers__faculty">
+            <details>
+              <summary class="current-offers__summary">
+                <h3 class="current-offers__summary-title">Маркетинг</h3>
+                <button
+                  class="current-offers__summary-btn"
+                  aria-label="Открыть список вакансий"
+                ></button>
+              </summary>
+              <ul class="current-offers__list">
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Гуру продаж"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [Зависит от ЦА]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Гуру продаж"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [Зависит от ЦА]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+                <li></li>
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Гуру продаж"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      [Оплата за ведение группы] [Зависит от ЦА]
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li class="current-offers__faculty">
+            <details>
+              <summary class="current-offers__summary">
+                <h3 class="current-offers__summary-title">Менеджмент</h3>
+                <button
+                  class="current-offers__summary-btn"
+                  aria-label="Открыть список ваканский"
+                ></button>
+              </summary>
+              <ul class="current-offers__list">
+                <li class="current-offers__vacancy">
+                  <div class="current-offers__vacancy-info">
+                    <h3 class="current-offers__vacancy-title">
+                      Наставник на курс "Создай второй Яндекс за 15 минут"
+                    </h3>
+                    <p class="current-offers__vacancy-description">
+                      Мы вам сами напишем
+                    </p>
+                  </div>
+                  <button
+                    class="current-offers__vacancy-btn"
+                    aria-label="Подробнее"
+                  >
+                    Подробнее
+                  </button>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </section>
+
+      <div class="vacancy-details">
+        <h2 class="vacancy-details__title">
+          Наставник на курс <br />"Мидл фронтенд-разработчик"
+        </h2>
+        <div class="vacancy-details__container">
+          <div class="form__container">
+            <h3 class="vacancy-details__subtitle">Откликнуться на вакансию</h3>
+            <form class="form">
+              <input
+                id="vacancy-details__name-input"
+                class="form__input"
+                type="text"
+                name="name"
+                value=""
+                placeholder="Имя Фамилия"
+                minlength="2"
+                maxlength="30"
+                autocomplete="off"
+                required
+              />
+              <input
+                id="vacancy-details__email-input"
+                class="form__input"
+                type="email"
+                name="email"
+                value=""
+                placeholder="Электронная почта"
+                minlength="2"
+                maxlength="30"
+                autocomplete="off"
+                required
+              />
+              <input
+                id="vacancy-details__tel-input"
+                class="form__input"
+                type="tel"
+                name="email"
+                value=""
+                placeholder="Телефон"
+                minlength="2"
+                maxlength="10"
+                autocomplete="off"
+                required
+              />
+              <input
+                id="vacancy-details__url-input"
+                class="form__input"
+                type="url"
+                name="url"
+                value=""
+                placeholder="Ссылка на ваше резюме"
+                autocomplete="off"
+                required
+              />
+              <div class="checkbox-container">
+                <input
+                  id="vacancy-details__accept-checkbox"
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="accept-checkbox"
+                  checked
+                  required
+                />
+                <label
+                  for="vacancy-details__accept-checkbox"
+                  class="checkbox-notification"
+                  >Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на обработку
+                  указанных данных для целей рассмотрения анкеты и обратной
+                  связи по ней.</label
+                >
+              </div>
+              <button
+                class="form__submit-btn"
+                type="submit"
+                aria-label="Отправить форму"
+              >
+                Присоединиться к команде
+              </button>
+            </form>
+            <button class="form__share-btn" aria-label="Поделиться вакансией">
+              Поделиться вакансией
+            </button>
+          </div>
+          <ul class="vacancy-details__offer">
+            <li class="vacancy-details__offer-section">
+              <ul class="vacancy-details__conditions-list">
+                <h4 class="vacancy-details__condition-title">Обязанности</h4>
+                <li class="vacancy-details__condition">
+                  Помощь студентам в учебной деятельности
+                </li>
+                <li class="vacancy-details__condition">
+                  Курирование группы из 50 студентов
+                </li>
+                <li class="vacancy-details__condition">
+                  Общение со студентами и сотрудниками практикума в чате
+                </li>
+                <li class="vacancy-details__condition">
+                  Проводить групповые звонки 2-3 часа в день
+                </li>
+              </ul>
+            </li>
+            <li class="vacancy-details__offer-section">
+              <ul class="vacancy-details__conditions-list">
+                <h4 class="vacancy-details__condition-title">Требования</h4>
+                <li class="vacancy-details__condition">
+                  Опыт работы программистом больше трех лет
+                </li>
+                <li class="vacancy-details__condition">Владение HTML, CSS</li>
+                <li class="vacancy-details__condition">
+                  Практиковались с JavaScript, React, TypeScript, Node.js
+                </li>
+                <li class="vacancy-details__condition">
+                  Работа по проекту от 8 до 12 часов в неделю
+                </li>
+              </ul>
+            </li>
+            <li class="vacancy-details__offer-section">
+              <ul class="vacancy-details__conditions-list">
+                <h4 class="vacancy-details__condition-title">Условия</h4>
+                <li class="vacancy-details__condition">
+                  Удалённое сотрудничество и ежемесячное вознаграждение
+                </li>
+                <li class="vacancy-details__condition">
+                  Частичную занятость и возможность совмещать участие в проекте
+                  с основной работой
+                </li>
+                <li class="vacancy-details__condition">
+                  Обмен опытом с разработчиками в нашем сообществе
+                </li>
+                <li class="vacancy-details__condition">
+                  Обучение в Школе наставников Яндекс.Практикума
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="no-vacancy">
+        <div class="no-vacancy__container">
+          <h3 class="no-vacancy__title">Нет подходяйщей вакансии ?</h3>
+          <p class="no-vacancy__text">
+            Заполните форму, а мы попробуем подобрать варианты
+          </p>
+          <div class="img-container">
+            <img
+              class="no-vacancy__img"
+              src="<%=require('./images/no-vacancy.svg')%>"
+              title="!!Добавить заглавие!!"
+              alt="!!Добавить описание картинки!!"
+            />
+          </div>
+        </div>
+        <div class="form__container">
+          <h4 class="form__title">Откликнуться на предложение</h4>
+          <form class="form" id="no-vacancy-form">
+            <input
+              id="no-vacancy__name-input"
+              class="form__input"
+              type="text"
+              name="name"
+              value=""
+              placeholder="Имя Фамилия"
+              minlength="2"
+              maxlength="30"
+              autocomplete="off"
+              required
+            />
+            <input
+              id="no-vacancy__email-input"
+              class="form__input"
+              type="email"
+              name="email"
+              value=""
+              placeholder="Электронная почта"
+              minlength="2"
+              maxlength="30"
+              autocomplete="off"
+              required
+            />
+            <input
+              id="no-vacancy__url-input"
+              class="form__input"
+              type="url"
+              name="url"
+              value=""
+              placeholder="Ссылка на ваше резюме"
+              autocomplete="off"
+              required
+            />
+            <label for="no-vacancy-position" class="no-vacancy__label"
+              >Какое направление вам ближе ?</label
+            >
+            <!-- <select id="no-vacancy-position" class="form__input" name="position" form="no-vacancy-form" form required>
+              <option values="">Должность</option>
+              <option values="marketing">Маркетинг</option>
+              <option values="design">Дизайн</option>
+              <option values="managment">Менеджмент</option>
+              <option values="programming">Программирование</option>
+              <option values="data-analitics">Анализ данных</option>
+            </select> -->
+            <div class="select" data-state="">
+              <div class="select__title" position-data-default="Position">
+                Должность
+              </div>
+              <div class="select__content">
+                <input
+                  id="position-select-1"
+                  class="select__input"
+                  type="radio"
+                  name="marketing"
+                  checked
+                />
+                <label for="position-select-1" class="select__label"
+                  >Маркетинг</label
+                >
+                <input
+                  id="position-select-2"
+                  class="select__input"
+                  type="radio"
+                  name="design"
+                />
+                <label for="position-select-2" class="select__label"
+                  >Дизайн</label
+                >
+                <input
+                  id="position-select-3"
+                  class="select__input"
+                  type="radio"
+                  name="managment"
+                />
+                <label for="position-select-3" class="select__label"
+                  >Менеджмент</label
+                >
+                <input
+                  id="position-select-4"
+                  class="select__input"
+                  type="radio"
+                  name="programming"
+                />
+                <label for="position-select-4" class="select__label"
+                  >Программирование</label
+                >
+                <input
+                  id="position-select-5"
+                  class="select__input"
+                  type="radio"
+                  name="data-analitics"
+                />
+                <label for="position-select-5" class="select__label"
+                  >Анализ данных</label
+                >
+              </div>
+            </div>
+            <!-- <label for="activity-type" class="no-vacancy__label">Чем вы хотите заниматься ?</label> -->
+            <!-- <select id="activity-type" class="form__input" name="activity" form required>
+              <option values="">Вид деятельности</option>
+              <option values="lectures">Проводить лекции</option>
+              <option values="review">Проверять учеников</option>
+              <option values="curriculum">
+                Разрабатывать учебную программу
+              </option>
+              <option values="methodology">
+                Создавать методические материалы
+              </option>
+              <option values="experience">Делиться опытом</option>
+            </select> -->
+            <!-- <div class="select activity-select" data-state="">
+              <div class="select__title activity-title" data-default="Activity">Вид деятельности</div>
+              <div class="select__content">
+                <input id="singleSelect0" class="select__input" type="radio" name="lectures" checked />
+                <label for="singleSelect0" class="select__label activity-lable">Проводить лекции</label>
+                <input id="singleSelect1" class="select__input" type="radio" name="review" />
+                <label for="singleSelect1" class="select__label activity-lable">Проверять учеников</label>
+                <input id="singleSelect2" class="select__input" type="radio" name="curriculum" />
+                <label for="singleSelect2" class="select__label activity-lable">Разрабатывать учебную программу</label>
+                <input id="singleSelect3" class="select__input" type="radio" name="methodology" />
+                <label for="singleSelect3" class="select__label activity-lable">Создавать методические материалы</label>
+                <input id="singleSelect4" class="select__input" type="radio" name="experience" />
+                <label for="singleSelect4" class="select__label activity-lable">Делиться опытом</label>
+              </div>
+            </div> -->
+            <div class="checkbox-container">
+              <input
+                id="accept-checkbox"
+                class="form__checkbox"
+                type="checkbox"
+                name="accept-checkbox"
+                checked
+                required
+              />
+              <label for="accept-checkbox" class="checkbox-notification"
+                >Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на обработку
+                указанных данных для целей рассмотрения анкеты и обратной связи
+                по ней.</label
+              >
+            </div>
+            <button
+              class="form__submit-btn"
+              type="submit"
+              aria-label="Отправить форму"
+            >
+              Отправить заявку
+            </button>
+          </form>
+          <button class="form__share-btn" aria-label="Поделиться вакансией">
+            Поделиться вакансией
+          </button>
+        </div>
+      </div>
+
+      <div class="success-popup">
+        <div class="img-container">
+          <img
+            class="success-popup__img"
+            src="<%=require('./images/thumb-up.svg')%>"
+            alt="!!Добавить описание картинки!!"
+          />
+        </div>
+        <h3 class="success-popup__title">Спасибо, ваша заявка отправлена</h3>
+        <p class="success-popup__text">
+          В течение 1-2 рабочих дней с вами свяжется наш оператор
+        </p>
+        <button class="success-popup__btn">Хочу делиться знаниями</button>
+      </div>
+
+      <section class="not-found">
+        <h2 class="not-found__title">404</h2>
+        <img
+          src="https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson"
+          class="not-found__image"
+        />
+        <p class="not-found__error-message">Страница не найдена</p>
+        <p class="not-found__error-text">
+          Потому что не рабоает и работать не будет
+        </p>
+        <div class="not-found__buttons">
+          <button class="not-found__button">
+            Вернуться на главную страницу
+          </button>
+          <button class="not-found__button">Связаться с нами</button>
+        </div>
+      </section>
+
+      <section class="videos">
+        <h2 class="videos__title">
+          Истории ребят из нашей <br />
+          команды
+        </h2>
+
+        <button class="videos__button">&#8592;</button>
+        <button class="videos__button">&#8594;</button>
+
+        <div class="videos__cards">
+          <div class="videos__card">
+            <img
+              src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
+              class="videos__iframe"
+            />
+            <h3 class="videos__author">Владимир</h3>
+            <p class="videos__job">ревьюер курса Веб-разработчик</p>
+            <p class="videos__text">
+              Когда я учился писать код, не было онлайн-курсов и площадок с
+              наставниками, и было сложно ориентироваться, что действительно
+              важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
+              мне кажется, делаю мир чуть лучше.
+            </p>
+          </div>
+          <div class="videos__card">
+            <img
+              src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
+              class="videos__iframe"
+            />
+            <h3 class="videos__author">Владимир</h3>
+            <p class="videos__job">ревьюер курса Веб-разработчик</p>
+            <p class="videos__text">
+              Когда я учился писать код, не было онлайн-курсов и площадок с
+              наставниками, и было сложно ориентироваться, что действительно
+              важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
+              мне кажется, делаю мир чуть лучше.
+            </p>
+          </div>
+          <div class="videos__card">
+            <img
+              src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
+              class="videos__iframe /"
+            />
+            <h3 class="videos__author">Владимир</h3>
+            <p class="videos__job">ревьюер курса Веб-разработчик</p>
+            <p class="videos__text">
+              Когда я учился писать код, не было онлайн-курсов и площадок с
+              наставниками, и было сложно ориентироваться, что действительно
+              важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
+              мне кажется, делаю мир чуть лучше.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="faq">
+        <h2 class="faq__title">Если остались вопросы</h2>
+        <br />
+        <div class="faq__container">
+          <ul class="faq__questions">
+            <li class="faq__question">
+              <details class="faq__question-details">
+                <summary class="faq__question-summary">
+                  Как планировать нагрузку?
+                </summary>
+                <p class="faq__text">
+                  Вы выбираете удобное время и определяете, сколько часов готовы
+                  выделить для занятий, а наши кураторы подбирают вам студентов
+                  под ваш график.При необходимости вы можете поменять график
+                  через кураторов.
+                </p>
+              </details>
+            </li>
+            <li class="faq__question">
+              <details class="faq__details">
+                <summary class="faq__summary">
+                  Сколько у меня будет студентов?
+                </summary>
+                <p class="faq__text">
+                  Вы выбираете удобное время и определяете, сколько часов готовы
+                  выделить для занятий, а наши кураторы подбирают вам студентов
+                  под ваш график.При необходимости вы можете поменять график
+                  через кураторов.
+                </p>
+              </details>
+            </li>
+            <li class="faq__question">
+              <details class="faq__details">
+                <summary class="faq__summary">Как устроена оплата?</summary>
+                <p class="faq__text">
+                  Вы выбираете удобное время и определяете, сколько часов готовы
+                  выделить для занятий, а наши кураторы подбирают вам студентов
+                  под ваш график.При необходимости вы можете поменять график
+                  через кураторов.
+                </p>
+              </details>
+            </li>
+            <li class="faq__question">
+              <details class="faq__details">
+                <summary class="faq__summary">Как устроена оплата?</summary>
+                <p class="faq__text">
+                  Вы выбираете удобное время и определяете, сколько часов готовы
+                  выделить для занятий, а наши кураторы подбирают вам студентов
+                  под ваш график.При необходимости вы можете поменять график
+                  через кураторов.
+                </p>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <hr class="footer__line" />
+      <nav class="footer__navigation">
+        <img
+          src="https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson"
+          class="footer__logo"
+        />
+        <div class="footer__links">
+          <a href="/" class="footer__link">Помощь</a>
+          <a href="/" class="footer__link">Лицензия</a>
+          <a href="/" class="footer__link">Правовая информация</a>
+          <a href="/" class="footer__link">Для работодателей</a>
+          <a href="/" class="footer__link">Отзывы</a>
+        </div>
+
+        <div class="footer__socials">
+          <img
+            src="https://static.thenounproject.com/png/3377598-200.png"
+            class="footer__social-img"
+          />
+          <img
+            src="https://static.thenounproject.com/png/3377598-200.png"
+            class="footer__social-img"
+          />
+          <img
+            src="https://static.thenounproject.com/png/3377598-200.png"
+            class="footer__social-img"
+          />
+        </div>
+      </nav>
+      <p class="footer__copyright">© 2022 Яндекс Практикум</p>
+    </footer>
+  </body>
+=======
         <section class="videos slider-wrapper">
           <h2 class="videos__title">
             Истории ребят из нашей <br />
@@ -209,4 +1140,5 @@
   </main>
 
 </body>
+
 </html>
