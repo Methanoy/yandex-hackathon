@@ -55,23 +55,28 @@
   line-height: 120%;
   max-width: 1182px;
   justify-content: space-between;
+  animation: sweep 0.5s ease-in-out;
 }
 
 .faq__summary:after {
   content: url(../../images/faq__plus.png);
-  transition: transform 0.5s;
+  transition: transform 0.9s;
   width: 55px;
   height: 55px;
   padding: 0;
   margin: 0;
+  transition: padding .5s ease;
 }
 
-// .faq__summary:hover:after {
-//   background-color: #000;
-//   opacity: .5;
-//   border-radius: 50%;
-// }
-// постараться сделать фон при наведении (смена рисунка может)
+.faq__summary:hover:after {
+  content: url(../../images/faq__plus_black_little.png);
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  margin: 0;
+  padding: 3px 0;
+  transition: padding .5s ease;
+}
 
 .faq__details[open] > .faq__summary:after {
   transform: rotateZ(-45deg);
@@ -85,7 +90,7 @@
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
   }
 }
