@@ -1,12 +1,43 @@
+@import './constants.scss';
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 112px;
+  margin: 40px 112px 91px;
 }
 
 .header__logo {
   width: 155px;
   height: 26px;
+  cursor: pointer;
+}
+
+.header__button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  border-radius: 20px;
+  padding: 9px 16px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-background;
+    color: $button-hover-text-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin: 36px 22px 42px;
+  }
+
+  .header__button {
+    display: none;
+    width: 121px;
+    height: 22px;
+  }
 }

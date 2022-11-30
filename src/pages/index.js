@@ -1,9 +1,14 @@
 import './index.scss';
 
-
+// Код для выпадающего списка формы
 const selectSingle = document.querySelector('.select');
 const selectSingleTitle = selectSingle.querySelector('.select__title');
 const selectSingleLabels = selectSingle.querySelectorAll('.select__label');
+// Код для слайдера, потом перенесу. Артем
+const slidesContainer = document.getElementById("slides-container");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("slide-arrow-prev");
+const nextButton = document.getElementById("slide-arrow-next");
 
 // Toggle position-select menu
 selectSingleTitle.addEventListener('click', () => {
@@ -42,3 +47,13 @@ for (let i = 0; i < selectSingleLabels.length; i++) {
 //     selectActivity.setAttribute('activity-data-state', '');
 //   });
 // }
+
+nextButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+  const slideWidth = slide.clientWidth;
+  slidesContainer.scrollLeft -= slideWidth;
+});
