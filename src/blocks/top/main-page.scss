@@ -46,8 +46,7 @@
   cursor: pointer;
 
   &:hover {
-    opacity: $button-hover-opacity;
-    transition: $button-hover-transition;
+    background-color: $button-hover-background;
   }
 }
 
@@ -55,18 +54,44 @@
 .main-page__image {
   position: absolute;
   height: auto;
-}
-
-.main-page__image_type_boy {
-  width: 265px;
-  top: 161px;
-  right: 265px;
-  z-index: 3;
-}
-
-.main-page__image_type_girl {
-  width: 285px;
+  width: 590px;
   top: 0;
   right: 0;
-  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  //показать картинки
+  .main-page__image {
+    display: none;
+  }
+
+  .main-page {
+    margin: $mobile-side-margin;
+    margin-bottom: 96px;
+  }
+
+  .main-page__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .main-page__title {
+    font-size: 33px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .main-page__message {
+    font-size: 16px;
+    margin-bottom: 46px;
+    width: 100%;
+  }
+
+  .main-page__button {
+    font-size: 16px;
+    width: 100%;
+    padding: 19px 0;
+    border-radius: 120px;
+  }
 }

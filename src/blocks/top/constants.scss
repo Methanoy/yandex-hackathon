@@ -1,6 +1,6 @@
 $background-color: #F7F7F8;
 $side-margin: 0 112px;
-$card-color:#FFFFFF;
+$card-color: #FFFFFF;
 
 //buttons
 $button-background: #000000;
@@ -8,11 +8,17 @@ $button-text-color: #FFFFFF;
 $button-font-weight: 400;
 $button-font-size: 18px;
 $button-line-height: 1.3;
-$button-hover-opacity: 0.8;
-$button-hover-transition: 0.1s;
+$button-hover-background: #FCD559;
 
 //page titles
 $title-font-weight: 500;
 $title-font-size: 48px;
 $title-line-height: 1.2;
 $title-width: 690px;
+
+//mobile
+$mobile-side-margin: 0 20px;
+
+$mobile-title-font-size: 30px;
+$mobile-title-line-height: 36px;
+$mobile-title-width: 100%;

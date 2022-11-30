@@ -62,7 +62,43 @@
   cursor: pointer;
 
   &:hover {
-    opacity: $button-hover-opacity;
-    transition: $button-hover-transition;
+    background-color: $button-hover-background;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .faculties {
+    margin: $mobile-side-margin;
+    margin-bottom: 100px;
+  }
+
+  .faculties__title {
+    font-size: $mobile-title-font-size;
+    line-height: $mobile-title-line-height;
+    width: $mobile-title-width;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .faculties__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faculty {
+    padding: 24px 15.5px;
+    height: 159px;
+  }
+
+  .faculty__name {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .faculty__image {
+    display: none;
+  }
+
 }

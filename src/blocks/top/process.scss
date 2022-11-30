@@ -130,8 +130,7 @@
   cursor: pointer;
 
   &:hover {
-    opacity: $button-hover-opacity;
-    transition: $button-hover-transition;
+    background-color: $button-hover-background;
   }
 }
 

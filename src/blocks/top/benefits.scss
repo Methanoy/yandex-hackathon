@@ -77,3 +77,21 @@
   bottom: 0;
   right: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .benefits {
+    margin: $mobile-side-margin;
+    margin-bottom: 80px;
+  }
+  .benefits__title {
+    font-size: $mobile-title-font-size;
+    line-height: $mobile-title-line-height;
+    width: $mobile-title-width;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .benefits__section {
+    display: none;
+  }
+}
