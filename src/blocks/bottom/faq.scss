@@ -65,7 +65,7 @@
   height: 55px;
   padding: 0;
   margin: 0;
-  transition: padding .5s ease;
+
 }
 
 .faq__summary:hover:after {
@@ -74,8 +74,7 @@
   height: 55px;
   padding: 0;
   margin: 0;
-  padding: 3px 0;
-  transition: padding .5s ease;
+
 }
 
 .faq__details[open] > .faq__summary:after {
