@@ -868,20 +868,24 @@
       </div>
 
       <section class="not-found">
-        <h2 class="not-found__title">404</h2>
-        <img
-          src="https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson"
-          class="not-found__image"
+        <div class="not-found__container">
+          <img
+          src="<%=require('./images/not-found__404.png')%>"
+          class="not-found__image" alt="404"
         />
-        <p class="not-found__error-message">Страница не найдена</p>
-        <p class="not-found__error-text">
-          Потому что не рабоает и работать не будет
-        </p>
-        <div class="not-found__buttons">
-          <button class="not-found__button">
-            Вернуться на главную страницу
-          </button>
-          <button class="not-found__button">Связаться с нами</button>
+          <div class="not-found__text-block">
+            <h2 class="not-found__title">О, нет! Страница
+              не найдена</h2>
+            <h3 class="not-found__questions">Почему?</h3>
+            <p class="not-found__error-message">Вероятно, это произошло из-за опечатки
+              в адресе или неправильной раскладки клавиатуры. Когда ошибка происходит
+              на стороне вашего браузера (клиента), её код всегда начинается на 4.</p>
+            <h3 class="not-found__questions">Что делать?</h3>
+            <p class="not-found__error-message">
+              Перейдите на нашу главную страницу, которая точно существует,
+              или напишите нам и мы всё поправим, обычно это занимает около 1 часа.
+            </p>
+          </div>
         </div>
       </section>
 
