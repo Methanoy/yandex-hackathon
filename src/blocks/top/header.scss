@@ -12,10 +12,6 @@
   width: 155px;
   height: 26px;
   cursor: pointer;
-
-  &:hover {
-    background-color: $button-hover-background;
-  }
 }
 
 .header__button {
@@ -30,6 +26,7 @@
 
   &:hover {
     background-color: $button-hover-background;
+    color: $button-hover-text-color;
   }
 }
 

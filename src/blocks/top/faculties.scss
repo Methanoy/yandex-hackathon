@@ -2,7 +2,7 @@
 
 .faculties {
   margin: $side-margin;
-  margin-bottom: 229px;
+  margin-bottom: 160px;
 }
 
 .faculties__title {
@@ -85,6 +85,7 @@
 
   &:hover {
     background-color: $button-hover-background;
+    color: $button-hover-text-color;
   }
 }
 
