@@ -1,8 +1,6 @@
 import './index.scss';
 
-
 // Код для слайдера, потом перенесу. Артем
-///////////////////////////////////////////////
 const slidesContainer = document.getElementById("slides-container");
 const slide = document.querySelector(".slide");
 const prevButton = document.getElementById("slide-arrow-prev");
@@ -17,6 +15,3 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
-////////////////////////////////////////////
-
-

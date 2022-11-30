@@ -1,35 +1,98 @@
+@import './constants.scss';
+
 .main-page {
-  display: flex;
-  flex-direction: row;
-  margin: 0 112px;
+  margin: $side-margin;
+  margin-bottom: 127px;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .main-page__info {
   display: flex;
   flex-direction: column;
-  margin-right: 138px;
-  max-width: 488px;
+  padding-top: 67px;
 }
 
 .main-page__title {
-  font-weight: 700;
-  font-size: 46px;
-  line-height: 1.3;
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 1.2;
+  margin: 0;
   margin-bottom: 16px;
+  width: 608px;
 }
 
 .main-page__message {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
-  margin-bottom: 48px;
+  color: #858585;
+  margin: 0;
+  margin-bottom: 65px;
+  width: 488px;
 }
 
+.main-page__button {
+  background-color: $button-background;
+  font-weight: $button-font-weight;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  color: $button-text-color;
+  width: 209px;
+  padding: 18.5px 38px;
+  border-radius: 120px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-background;
+    color: $button-hover-text-color;
+  }
+}
+
+//анимация
 .main-page__image {
-  height: 425px;
+  position: absolute;
+  height: auto;
   width: 590px;
-  margin: 117.5px 0;
-  background-color: gainsboro;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  //показать картинки
+  .main-page__image {
+    display: none;
+  }
+
+  .main-page {
+    margin: $mobile-side-margin;
+    margin-bottom: 96px;
+  }
+
+  .main-page__info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .main-page__title {
+    font-size: 33px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .main-page__message {
+    font-size: 16px;
+    margin-bottom: 46px;
+    width: 100%;
+  }
+
+  .main-page__button {
+    font-size: 16px;
+    width: 100%;
+    padding: 19px 0;
+    border-radius: 120px;
+  }
 }

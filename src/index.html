@@ -12,9 +12,11 @@
 <body class="page">
   <main class="main">
     <header class="header">
-      <img class="header__logo">
-      <a class="header__button">Текст</a>
+      <a href="https://practicum.yandex.ru/" target="_blank"><img class="header__logo"
+          src="<%=require('./images/logo.svg')%>" alt="Яндекс Практикум"></a>
+      <a class="header__button" href="#">В профиль</a>
     </header>
+
     <section class="main-page">
       <div class="main-page__info">
         <h1 class="main-page__title">Станьте наставником или ревьювером</h1>
@@ -23,127 +25,130 @@
           менеджменте, маркетинге или дизайне и получайте дополнительный
           доход.
         </p>
-        <a class="main-page__hyperlink">Хочу делиться знаниями</a>
-        <!-- + кнопка поделиться - куда ведет? -->
+        <a class="main-page__button" href="#">Хочу делиться знаниями</a>
+        <img class="main-page__image" src="<%=require('./images/main-page/people.png')%>">
       </div>
       <img class="main-page__image" />
     </section>
+
     <section class="benefits">
+      <h2 class="benefits__title">В роли эксперта Практикума вы будете</h2>
       <div class="benefits__section">
         <div class="benefit benefit_size_big">
           <h3 class="benefit__name">Менять жизнь людей к лучшему</h3>
           <p class="benefit__description">Тысячи наших студентов нуждаются в ваших знаниях и опыте — не бойтесь ими
             делиться.</p>
-          <img>
+          <img class="benefit__image" src="<%=require('./images/benefits/pic-robot.svg')%>" alt="Робот">
         </div>
         <div class="benefit benefit_size_big">
           <h3 class="benefit__name">Иметь доход в среднем от 35 до 50 тысяч руб. в месяц</h3>
           <p class="benefit__description">Удаленно, 2–3 часа в день, график выберете сами.</p>
-          <img>
+          <img class="benefit__image" src="<%=require('./images/benefits/pic-yoda.png')%>" alt="Медитирующий Йода">
         </div>
       </div>
       <div class="benefits__section">
         <div class="benefit benefit_size_small">
-          <h3 class="benefit__name">Учиться новому</h3>
-          <p class="benefit__description">Вы узнаете, как давать обратную связь, выступать на публике и мотивировать
-            людей.</p>
+          <h3 class="benefit__name">Общаться в EdTech</h3>
+          <p class="benefit__description">Станете частью сообщества экспертов и посмотрите на мир онлайн-образования
+            изнутри</p>
         </div>
         <div class="benefit benefit_size_small">
-          <h3 class="benefit__name">Общаться с людьми из EdTech</h3>
-          <p class="benefit__description">Станете частью сообщества экспертов и посмотрите на мир онлайн-образования
-            изнутри.</p>
+          <h3 class="benefit__name">Учиться новому</h3>
+          <p class="benefit__description">Узнаете, как давать обратную связь, выступать на публике и мотивировать людей
+          </p>
         </div>
         <div class="benefit benefit_size_small">
           <h3 class="benefit__name">Развивать личный бренд</h3>
-          <p class="benefit__description">Публикуйте статьи в нашем блоге и выступайте на мероприятиях, чтобы о вас
-            узнали как об эксперте.</p>
+          <p class="benefit__description">Публикуйте статьи в блоге Практикума и выступайте на мероприятиях, чтобы о вас
+            узнали как об эксперте</p>
         </div>
         <div class="benefit benefit_size_small">
-          <h3 class="benefit__name">Развиваться внутри роли</h3>
-          <p class="benefit__description">Вы узнаете, как давать обратную связь, выступать на публике и мотивировать
-            людей.</p>
+          <h3 class="benefit__name">Расти внутри роли</h3>
+          <p class="benefit__description">Вы сможете стать старшим наставником или сеньор-ревьювером</p>
         </div>
       </div>
     </section>
-    <!-- <section class="faculties">
-      <a class="faculties__arrow faculties__arrow_type_left">&#8592;</a>
-      <div class="faculties__container">
-        <div class="faculty">
-          <h3 class="faculty__name">Название факультета</h2>
-          <p class="faculty__description">Название факультета</p>
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Название факультета</h2>
-          <p class="faculty__description">Название факультета</p>
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Название факультета</h2>
-          <p class="faculty__description">Название факультета</p>
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Название факультета</h2>
-          <p class="faculty__description">Название факультета</p>
-        </div> -->
-    <!-- <div class="faculty">
-        <h2 class="faculty__name">Название факультета</h2>
-        <p class="faculty__description">Название факультета</p>
-      </div> -->
-    <!-- </div>
-      <a class="faculties__arrow faculties__arrow_type_right">&#8594;</a>
-    </section> -->
+
     <section class="faculties">
       <h2 class="faculties__title">Помогаем развиваться по направлениям</h2>
       <div class="faculties__container">
         <div class="faculty">
-          <h2 class="faculty__name">Название факультета</h2>
+          <h3 class="faculty__name">Менеджмент</h3>
+          <p class="faculty__description">Интернет-маркетинг и управление трафиком</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-management.svg')%>" alt="">
         </div>
         <div class="faculty">
-          <h2 class="faculty__name">Название факультета</h2>
+          <h3 class="faculty__name">Дизайн</h3>
+          <p class="faculty__description">Графический, коммуникационный, для интерфейсов и продуктов</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-design.svg')%>" alt="">
         </div>
         <div class="faculty">
-          <h2 class="faculty__name">Название факультета</h2>
+          <h3 class="faculty__name">Анализ данных</h3>
+          <p class="faculty__description">SQL, аналитика, Data Science  и архитектура данных</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-data-analysis.svg')%>" alt="">
         </div>
         <div class="faculty">
-          <h2 class="faculty__name">Название факультета</h2>
+          <h3 class="faculty__name">Маркентинг</h3>
+          <p class="faculty__description">Интернет-маркетинг и управление трафиком</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-marketing.svg')%>" alt="">
         </div>
         <div class="faculty">
-          <h2 class="faculty__name">Название факультета</h2>
+          <h3 class="faculty__name">Программирование</h3>
+          <p class="faculty__description">Тестирование, фронтенд, бэкенд, DevOps и алгоритмы</p>
+          <a class="faculty__button">Подробнее</a>
+          <img class="faculty__image" src="<%=require('./images/faculties/pic-programming.svg')%>" alt="">
         </div>
         <div class="faculty">
-          <h2 class="faculty__name">Название факультета</h2>
+          <h3 class="faculty__name">Все курсы</h3>
+          <p class="faculty__description">76 программ для обучения онлайн</p>
+          <a class="faculty__button">Подробнее</a>
         </div>
       </div>
     </section>
+
     <section class="process">
       <h2 class="process__title">Как стать экспертом Практикума</h2>
       <div class="stages">
-        <div class="stage">
-          <img class="stage__image">
+        <div class="stage stage_number_one">
+          <img class="stage__image stage__image_number_one" src="<%=require('./images/process/stage-one.svg')%>"
+            alt="Очки">
           <p class="stage__name">Выберите роль</p>
-          <p class="stage__description">Определитесь, что вам ближе: наставник или ревьюер?</p>
+          <p class="stage__description">Определитесь с курсом и поймите, что ближе: быть наставником или ревьюером</p>
         </div>
-        <div class="stage">
-          <img class="stage__image">
+        <div class="stage stage_number_two">
+          <img class="stage__image stage__image_number_two" src="<%=require('./images/process/stage-two.svg')%>"
+            alt="Человек">
           <p class="stage__name">Заполните заявку</p>
-          <p class="stage__description">Начать можно прямо сейчас. Даже если нет вакснсий, мы свяжемся с вами</p>
+          <p class="stage__description">Начать можно прямо сейчас. Даже если нет вакансий, мы свяжемся с вами</p>
         </div>
-        <div class="stage">
-          <img class="stage__image">
-          <p class="stage__name">Пройдите отбор и бесплатное обучение</p>
-          <p class="stage__description">Пригласим на двухнедельное обучение для прокачки софтов</p>
+        <div class="stage stage_number_three">
+          <img class="stage__image stage__image_number_three" src="<%=require('./images/process/stage-three.svg')%>"
+            alt="Путь">
+          <p class="stage__name">Пройдите обучение</p>
+          <p class="stage__description">Пригласим на двухнедельное бесплатное обучение для прокачки софтов</p>
         </div>
-        <div class="stage">
-          <img class="stage__image">
-          <p class="stage__name">Начните делиться знаниями</p>
-          <p class="stage__description">Студенты Практикума ждут опытных коллег на курсах</p>
+        <div class="stage stage_number_four">
+          <img class="stage__image stage__image_number_four" src="<%=require('./images/process/stage-four.svg')%>"
+            alt="Люди, смотрящие на график">
+          <p class="stage__name">Делитесь знаниями</p>
+          <p class="stage__description">Студенты Практикума ждут поддержки опытных коллег на курсах</p>
         </div>
       </div>
       <div class="start">
-        <p class="start__text">Присоединяйтесь и встречайте своих первых студентов онлайн</p>
-        <!-- <img class="start__image"> -->
-        <a class="start__link">Начать</a>
+
+        <p class="start__text">Станьте частью команды и вдохновляйте своих первых студентов</p>
+        <a class="start__button" href="#">Стать частью команды</a>
+        <img class="start__image start__image_left" src="<%=require('./images/process/dinasaur-left.svg')%>"
+          alt="Динозавр">
+        <img class="start__image start__image_right" src="<%=require('./images/process/dinasaur-right.svg')%>"
+          alt="Динозавр">
       </div>
     </section>
+
     <section class="team-roles">
       <h2 class="section-title">Роли в нашей команде</h2>
       <h3 class="section-subtitle">Выберите, что вам ближе</h3>
