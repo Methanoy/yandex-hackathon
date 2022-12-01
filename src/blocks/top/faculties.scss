@@ -68,11 +68,11 @@
   border-radius: 120px;
   text-align: center;
   cursor: pointer;
-  transition: $button-hover-transition;
   padding: 8.5px 50px;
   visibility: hidden;
 
   &:hover {
+    transition: $button-hover-transition;
     background-color: $button-hover-background;
     color: $button-hover-text-color;
   }
@@ -89,7 +89,7 @@
   height: 140px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
   .faculty {
     &:hover .faculty__description {
       visibility: visible;
@@ -105,7 +105,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 950px) {
   .faculties {
     margin: $mobile-side-margin;
     margin-bottom: 64px;

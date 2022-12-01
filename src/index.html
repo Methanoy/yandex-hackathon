@@ -13,7 +13,12 @@
   <header class="header">
     <a href="https://practicum.yandex.ru/" target="_blank"><img class="header__logo"
         src="<%=require('./images/logo.svg')%>" alt="Яндекс Практикум"></a>
-    <a class="header__button" href="#">В профиль</a>
+    <nav class="header__navigation">
+      <a class="header__link" href="#">Направления</a>
+      <a class="header__link" href="#">Роли</a>
+      <a class="header__link" href="#">Предложения</a>
+      <a class="header__link" href="#">FAQ</a>
+    </nav>
   </header>
   <main class="page">
     <section class="main-page">
@@ -68,6 +73,7 @@
       </div>
     </section>
 
+    <!-- benefits в мобильной версии -->
     <section class="carousel">
       <h2 class="benefits__title">В роли эксперта Практикума вы будете</h2>
       <div class="carousel__section">
@@ -207,6 +213,7 @@
       </div>
     </section>
 
+    <!-- process в мобильной версии -->
     <section class="carousel">
       <h2 class="process__title">Как стать экспертом Практикума</h2>
       <div class="carousel__section">

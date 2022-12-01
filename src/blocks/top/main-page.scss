@@ -62,7 +62,13 @@
   right: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1340px) {
+  .main-page__image {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 950px) {
   //показать картинки
   .main-page__image {
     display: none;
@@ -93,8 +99,9 @@
 
   .main-page__button {
     font-size: 16px;
-    width: 100%;
+    width: 335px;
     padding: 19px 0;
     border-radius: 120px;
+    align-self: center;
   }
 }

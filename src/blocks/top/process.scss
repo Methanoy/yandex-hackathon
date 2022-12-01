@@ -19,24 +19,21 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 0 0 20px;
+  gap: 20px;
 }
 
 .stage {
   width: 285px;
   height: 406px;
-  margin-right: 20px;
   background-color: $card-color;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   justify-content: flex-end;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top 41px left 0;
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 }
 
 .stage_number_one {
@@ -150,7 +147,14 @@
   bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1439px) {
+  .stages {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 950px) {
   .process {
     display: none;
   }
