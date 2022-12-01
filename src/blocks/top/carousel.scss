@@ -40,3 +40,9 @@
 .breadcrumbs__dot_active {
   background-color: #FCD559;
 }
+
+@media screen and (min-width: 768px) {
+  .carousel {
+    display: none;
+  }
+}
