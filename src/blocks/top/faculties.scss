@@ -41,6 +41,10 @@
   &:last-child .faculty__button {
     visibility: visible;
   }
+
+  &:last-child .faculty__image {
+    visibility: hidden;
+  }
 }
 
 .faculty__name {
