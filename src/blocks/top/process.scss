@@ -158,8 +158,7 @@
     font-size: $mobile-title-font-size;
     line-height: $mobile-title-line-height;
     width: $mobile-title-width;
-    margin: 0;
-    margin-bottom: 40px;
+    margin: 0 auto 40px 20px;
   }
 
   .stages {
@@ -195,5 +194,33 @@
   .stage__image_number_four {
     margin-left: 31px;
     margin-bottom: 40px;
+  }
+
+  .start {
+    margin-top: 40px;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  .start__text {
+    margin: 166px 61px 48px;
+    width: 253px;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .start__button {
+    font-size: 16px;
+    padding: 20px 42px;
+    margin-bottom: 96px;
+  }
+
+  .start__image_left {
+    top: 0;
+  }
+
+  .start__image_right {
+    top: 0;
   }
 }
