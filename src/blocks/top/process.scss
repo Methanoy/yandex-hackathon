@@ -128,6 +128,7 @@
   margin-bottom: 32px;
   border-radius: 120px;
   cursor: pointer;
+  transition: $button-hover-transition;
 
   &:hover {
     background-color: $button-hover-background;

@@ -44,10 +44,12 @@
   border-radius: 120px;
   text-align: center;
   cursor: pointer;
+  transition: $button-hover-transition;
 
   &:hover {
     background-color: $button-hover-background;
     color: $button-hover-text-color;
+
   }
 }
 

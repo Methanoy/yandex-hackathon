@@ -68,7 +68,7 @@
   border-radius: 120px;
   text-align: center;
   cursor: pointer;
-  ;
+  transition: $button-hover-transition;
   padding: 8.5px 50px;
   visibility: hidden;
 

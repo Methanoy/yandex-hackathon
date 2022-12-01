@@ -23,6 +23,7 @@
   background-color: black;
   color: white;
   cursor: pointer;
+  transition: $button-hover-transition;
 
   &:hover {
     background-color: $button-hover-background;
