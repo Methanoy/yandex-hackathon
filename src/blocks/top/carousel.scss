@@ -1,0 +1,48 @@
+@import './constants.scss';
+
+.carousel {
+  margin: 0 0 64px 0;
+  overflow: hidden;
+}
+
+.carousel__section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.carousel__element {
+  flex-shrink: 0;
+}
+
+.breadcrumbs {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs__dot {
+  width: 12px;
+  height: 12px;
+  background-color: #EAEAEA;
+  border-radius: 50%;
+
+  &:not(:last-of-type) {
+    margin: 0 12px 0 0;
+  }
+}
+
+.breadcrumbs__dot_active {
+  background-color: #FCD559;
+}
+
+@media screen and (min-width: 950px) {
+  .carousel {
+    display: none;
+  }
+}
