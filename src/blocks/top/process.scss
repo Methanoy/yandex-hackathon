@@ -22,7 +22,7 @@
 }
 
 .stage {
-  max-width: 285px;
+  width: 285px;
   height: 406px;
   margin-right: 20px;
   background-color: $card-color;
@@ -147,4 +147,53 @@
 .start__image_right {
   right: 0;
   bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .process {
+    display: none;
+  }
+
+  .process__title {
+    font-size: $mobile-title-font-size;
+    line-height: $mobile-title-line-height;
+    width: $mobile-title-width;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .stages {
+    margin: 0 0 40px;
+    justify-content: flex-start;
+  }
+
+  .stage {
+    height: 391px;
+    border-radius: 15px;
+    background-position: top 30px left 0;
+
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+
+  .stage__image_number_one {
+    margin-bottom: 46px;
+  }
+
+  .stage__image_number_two {
+    margin-left: 28px;
+    margin-bottom: 48px;
+  }
+
+  .stage__image_number_three {
+    height: 191px;
+    margin-left: 45px;
+    margin-bottom: 43px;
+  }
+
+  .stage__image_number_four {
+    margin-left: 31px;
+    margin-bottom: 40px;
+  }
 }

@@ -18,11 +18,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
 
-
-  &:last-child {
-    margin-bottom: 0;
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
@@ -80,18 +78,45 @@
 
 @media screen and (max-width: 767px) {
   .benefits {
-    margin: $mobile-side-margin;
-    margin-bottom: 80px;
+    display: none;
   }
+
   .benefits__title {
+    font-weight: $title-font-weight;
     font-size: $mobile-title-font-size;
     line-height: $mobile-title-line-height;
     width: $mobile-title-width;
-    margin: 0;
-    margin-bottom: 28px;
+    margin: 0 20px 40px 0;
   }
 
-  .benefits__section {
-    display: none;
+  .benefit {
+    padding: 0;
+    margin-right: 20px;
+    border-radius: 15px;
+    width: 285px;
+    height: 413px;
+    background-color: $card-color;
+    color: #858585;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .benefit__name {
+    max-width: 100%;
+    font-size: 24px;
+    margin: 16px 16px 12px;
+  }
+
+  .benefit__description {
+    max-width: 100%;
+    font-size: 16px;
+    margin: 0 16px auto;
+  }
+
+  .benefit__image {
+    width: 285px;
+    height: 215px;
+    position: static;
   }
 }

@@ -1,4 +1,5 @@
 import './index.scss';
+import '../scripts/carousel.js';
 
 // Код для выпадающего списка формы
 const selectSingle = document.querySelector('.select');
