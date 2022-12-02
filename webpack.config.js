@@ -4,10 +4,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: { main: './src/pages/index.js' }, //поменять путь, если изменим структуру
+  entry: { main: './src/scripts/pages/index.js' }, //поменять путь, если изменим структуру
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: 'main.js',
+    publicPath: '',
+    clean: true,
   },
   mode: 'development',
   devServer: {
@@ -25,11 +27,11 @@ module.exports = {
         exclude: '/node_modules/'
       },
       {
-        test: /\.(png|svg|jpg|webp|gif|woff(2)?|eot|ttf|otf)$/,
+        test: /\.(png|jpg|webp|gif|woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource'
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(woff|woff2|eot|ttf|svg|otf)$/i,
         type: "asset/resource",
         generator: {
           filename: "fonts/[name].[hash][ext]",
@@ -71,6 +73,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
-  ]
+  ],
+  stats: {
+    children: true
+  }
 }
 // вроде как так принято. [name] равен тому, что у нас в первой строчке entry: { main.. Т.е. main
