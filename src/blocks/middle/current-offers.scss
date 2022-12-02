@@ -71,7 +71,7 @@
 }
 
 .current-offers__summary:after {
-  content: url(../../images/faq__plus.png);
+  content: url(../../images/faq__plus.svg);
   transition: transform 0.9s;
   width: 55px;
   height: 55px;
@@ -80,7 +80,7 @@
 }
 
 .current-offers__summary:hover:after {
-  content: url(../../images/faq__plus_black_little.png);
+  content: url(../../images/faq__plus_black_small.jpg);
   width: 55px;
   height: 55px;
   padding: 0;
