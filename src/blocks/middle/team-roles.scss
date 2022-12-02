@@ -17,6 +17,10 @@
   max-width: 900px;
 }
 
+.team-roles_hidden {
+  display: none;
+}
+
 .team-roles__img {
   width: 100%;
   object-fit: cover;
@@ -31,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 217px;
+  width: 253px;
   height: 48px;
   margin: 40px 0 80px;
   border-radius: 12px;
@@ -42,12 +46,12 @@
   position: absolute;
   top: 20%;
   right: 0;
-  content: url('../../images/twisted-arrow.svg');
+  content: url("../../images/team-roles/twisted-arrow.svg");
 }
 
 .team-roles__btn {
   width: 100%;
-  width: 98px;
+  width: 122px;
   height: 36px;
   border: none;
   border-radius: 10px;
@@ -57,11 +61,12 @@
   font-size: 14px;
   line-height: 1.3;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.85);
+  color: #000;
 }
 
 .team-roles__btn_disabled {
   background: transparent;
+  background-color: #eaeaea;
 }
 
 .team-roles__btn_enabled {
@@ -87,7 +92,7 @@
   line-height: 1.3;
   max-width: 285px;
   height: 134px;
-  background-color: #FFF;
+  background-color: #fff;
   border-radius: 6px;
   padding: 21px;
 }
@@ -108,6 +113,10 @@
 }
 
 @media screen and (max-width: 375px) {
+  .team-roles {
+    padding: 32px 20px 32px;
+    row-gap: 40px;
+  }
 
   .team-roles__info-container {
     display: flex;
@@ -119,16 +128,34 @@
 
   .team-roles__btns-container {
     width: 335px;
+    height: 48px;
+    margin: 24px 0 40px;
   }
 
   .team-roles__btn {
     width: 335px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .team-roles__duties-list {
+    gap: 16px;
   }
 
   .team-roles__duty {
     max-width: 335px;
-    height: 94px;
+    height: 69px;
     border-radius: 15px;
     padding: 24px 16px;
+    font-size: 16px;
+  }
+
+  .team-roles__img {
+    width: 335px;
+    height: 333px;
+  }
+
+  .team-roles__img-container {
+    width: 350px;
   }
 }

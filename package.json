@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/Methanoy/yandex-hackathon#readme",
   "devDependencies": {
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "10.4.5",
     "babel-loader": "^9.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.2",
@@ -51,6 +51,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "core-js": "^3.26.1"
+    "core-js": "^3.26.1",
+    "lodash": "^4.17.21"
   }
 }
