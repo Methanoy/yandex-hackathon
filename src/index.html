@@ -885,23 +885,23 @@
         </div>
       </div>
 
-      <section class="not-found popup">
-        <div class="not-found__container">
+      <section class="errors errors_visible">
+        <div class="errors__container">
           <img
-            src="<%=require('./images/not-found__404.png')%>"
-            class="not-found__image"
+            src="<%=require('./images/errors__404.png')%>"
+            class="errors__image"
             alt="404"
           />
-          <div class="not-found__text-block">
-            <h2 class="not-found__title">О, нет! Страница не найдена</h2>
-            <h3 class="not-found__questions">Почему?</h3>
-            <p class="not-found__error-message">
+          <div class="errors__text-block">
+            <h2 class="errors__title">О, нет! Страница не найдена</h2>
+            <h3 class="errors__questions">Почему?</h3>
+            <p class="errors__error-message">
               Вероятно, это произошло из-за опечатки в адресе или неправильной
               раскладки клавиатуры. Когда ошибка происходит на стороне вашего
               браузера (клиента), её код всегда начинается на 4.
             </p>
-            <h3 class="not-found__questions">Что делать?</h3>
-            <p class="not-found__error-message">
+            <h3 class="errors__questions">Что делать?</h3>
+            <p class="errors__error-message">
               Перейдите на нашу главную страницу, которая точно существует, или
               напишите нам и мы всё поправим, обычно это занимает около 1 часа.
             </p>
@@ -909,18 +909,18 @@
         </div>
       </section>
 
-      <section class="videos slider-wrapper">
+      <section class="videos">
         <h2 class="videos__title">
           Истории ребят из нашей <br />
           команды
         </h2>
 
         <button
-          class="videos__button videos__button_left"
+          class="videos__button videos__button_left previous"
           id="slide-arrow-prev"
         ></button>
         <button
-          class="videos__button videos__button_right"
+          class="videos__button videos__button_right next"
           id="slide-arrow-next"
         ></button>
 
@@ -929,105 +929,122 @@
           class="videos__arrow-image"
         />
 
-        <ul class="videos__cards slides-container" style="display: none;" id="slides-container">
-          <li class="slide">
-            <div class="videos__card">
-              <img
-                src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
-                class="videos__iframe"
-              />
-              <h3 class="videos__author">Владимир</h3>
-              <p class="videos__job">ревьюер курса Веб-разработчик</p>
-              <p class="videos__text">
-                Когда я учился писать код, не было онлайн-курсов и площадок с
-                наставниками, и было сложно ориентироваться, что действительно
-                важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
-                мне кажется, делаю мир чуть лучше.
-              </p>
-            </div>
-          </li>
-          <li class="slide">
-            <div class="videos__card">
-              <img
-                src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
-                class="videos__iframe"
-              />
-              <h3 class="videos__author">Владимир</h3>
-              <p class="videos__job">ревьюер курса Веб-разработчик</p>
-              <p class="videos__text">
-                Когда я учился писать код, не было онлайн-курсов и площадок с
-                наставниками, и было сложно ориентироваться, что действительно
-                важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
-                мне кажется, делаю мир чуть лучше.
-              </p>
-            </div>
-          </li>
-          <li class="slide">
-            <div class="videos__card">
-              <img
-                src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
-                class="videos__iframe"
-              />
-              <h3 class="videos__author">Владимир</h3>
-              <p class="videos__job">ревьюер курса Веб-разработчик</p>
-              <p class="videos__text">
-                Когда я учился писать код, не было онлайн-курсов и площадок с
-                наставниками, и было сложно ориентироваться, что действительно
-                важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
-                мне кажется, делаю мир чуть лучше.
-              </p>
-            </div>
-          </li>
+        <div class="videos__cards">
+          <div class="videos__card item">
+            <iframe
+              class="videos__iframe"
+              src="https://www.youtube.com/embed/Yd3hfslhMn0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="videos__author">Ирина</h3>
+            <p class="videos__job">ревьюер курса Веб-разработчик</p>
+            <p class="videos__text">
+              Работа код-ревьюера с гибким графиком, благодаря ей я получаю
+              дополнительный доход и могу делиться своим опытом. Ведь при
+              написании кода важно не только большое количество практики,
+              но и поддержка коллег.
+            </p>
+          </div>
+          <div class="videos__card item">
+            <iframe
+              class="videos__iframe"
+              src="https://www.youtube.com/embed/1JaFTkOhXrw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="videos__author">Владимир</h3>
+            <p class="videos__job">ревьюер курса Веб-разработчик</p>
+            <p class="videos__text">
+              Когда я учился писать код, не было онлайн-курсов и площадок с
+              наставниками, и было сложно ориентироваться, что действительно
+              важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
+              мне кажется, делаю мир чуть лучше.
+            </p>
+          </div>
 
-          <li class="slide">
-            <div class="videos__card">
-              <img
-                src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
-                class="videos__iframe"
-              />
-              <h3 class="videos__author">Владимир</h3>
-              <p class="videos__job">ревьюер курса Веб-разработчик</p>
-              <p class="videos__text">
-                Когда я учился писать код, не было онлайн-курсов и площадок с
-                наставниками, и было сложно ориентироваться, что действительно
-                важно знать и уметь, а что нет. Сейчас я делюсь своим опытом и,
-                мне кажется, делаю мир чуть лучше.
-              </p>
-            </div>
-          </li>
-          <li class="slide">
-            <div class="videos__card">
-              <img
-                src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
-                class="videos__iframe"
-              />
-              <h3 class="videos__author">Ира</h3>
-              <p class="videos__job">старший код-ревьюер веб-факультета</p>
-              <p class="videos__text">
-                Работа код-ревьюера с гибким графиком, благодаря ей я получаю
-                дополнительный доход и могу делиться своим опытом. Ведь при
-                написании кода важно не только большое количество практики, но и
-                поддержка коллег.
-              </p>
-            </div>
-          </li>
-          <li class="slide">
-            <div class="videos__card">
-              <img
-                src="https://www.techgenyz.com/wp-content/uploads/2018/07/youtube.jpg"
-                class="videos__iframe"
-              />
-              <h3 class="videos__author">Стас</h3>
-              <p class="videos__job">ревьюер курса Data Engineering</p>
-              <p class="videos__text">
-                С Практикумом меня объединяют любовь к технологиям, вера в
-                онлайн-образование и желание помогать людям покорять новые
-                горизонты. Сам почти полностью осваивал профессию онлайн,
-                поэтому хочу и другим людям помочь в получении новых навыков.
-              </p>
-            </div>
-          </li>
-        </ul>
+          <div class="videos__card item">
+            <iframe
+              class="videos__iframe"
+              src="https://www.youtube.com/embed/ASN0SeEyC0g"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="videos__author">Стас</h3>
+            <p class="videos__job">ревьюер курса Data Engineering</p>
+            <p class="videos__text">
+              С Практикумом меня объединяют любовь к технологиям, верав
+              онлайн-образование и желание помогать людям покорять новые
+              горизонты. Сам почти полностью осваивал профессию онлайн, поэтому
+              хочу и другим людям помочь в получении новых навыков.
+            </p>
+          </div>
+
+          <div class="videos__card item">
+            <iframe
+              class="videos__iframe"
+              src="https://www.youtube.com/embed/wc0kH3KcZjE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="videos__author">Лиля</h3>
+            <p class="videos__job">наставник курса Интернет-маркетолог</p>
+            <p class="videos__text">
+              Для меня онлайн-преподавание — это суперудобно: я не трачу время
+              на дорогу, всегда ем домашнюю еду, успеваю найти время для спорта
+              и семьи. Единственный недостаток — отсутствие общения с коллегами.
+              Поэтому я пришла в Практикум — ради онлайн тусовки и обмена опытом
+              с коллегами.
+            </p>
+          </div>
+
+          <div class="videos__card item">
+            <iframe
+              class="videos__iframe"
+              src="https://www.youtube.com/embed/lxcehpdwbkc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="videos__author">Юля</h3>
+            <p class="videos__job">ревьюер курса React-разработчик</p>
+            <p class="videos__text">
+              Работать онлайн очень удобно: не надо тратить время и деньги на
+              проезд. Вместо этого, например, можно сделать утреннюю йогу — ну и
+              поспать подольше. Классно, что можно самомтоятельно выбирать свой
+              график и в любой момент его поменять, если возникнет
+              необходимость.
+            </p>
+          </div>
+
+          <div class="videos__card item">
+            <iframe
+              class="videos__iframe"
+              src="https://www.youtube.com/embed/c7VQ_jHx-Zg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="videos__author">Дима</h3>
+            <p class="videos__job">наставник курса IOS-разработчик</p>
+            <p class="videos__text">
+              Преподавание в Практикуме — это прежде всего профессионализм.
+              Дружный коллектив поможет получить новые знания, опыт и позитивные
+              эмоции от работы, а благодарность твоих студентов — вообще нечто
+              бесценное.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="faq">
@@ -1088,23 +1105,23 @@
         </div>
       </section>
 
-      <!-- Перенести footer из main, почему-то появляется пространство белое иначе -->
       <footer class="footer">
+        <div class="footer__logo-block">
+          <img
+            src="<%=require('./images/footer__ya.svg')%>"
+            class="footer__logo_ya"
+          />
+          <img
+            src="<%=require('./images/footer__praktikum.svg')%>"
+            class="footer__logo_prak"
+          />
+        </div>
+
+        <p class="footer__number">8-800-700-93-29</p>
+
         <div class="footer__block">
           <div class="footer__info">
-            <div class="footer__logo-block">
-              <img
-                src="<%=require('./images/footer__ya.svg')%>"
-                class="footer__logo_ya"
-              />
-              <img
-                src="<%=require('./images/footer__praktikum.svg')%>"
-                class="footer__logo_prak"
-              />
-            </div>
-
-            <p class="footer__number">8-800-700-93-29</p>
-            <p class="footer__column-title">Звонок по России бесплатный</p>
+            <p class="footer__column-title" id="call">Звонок по России бесплатный</p>
             <div class="footer__socials">
               <p class="footer_journal">Журнал</p>
               <img
@@ -1124,8 +1141,8 @@
             </p>
             <p class="footer__text footer__text_extra-margin">
               Образовательные услуги оказываются АНО ДПО «ШАД». Это Школа
-              анализа данных, основанная Яндексом. Оказывает услуги на
-              основании Лицензии № 036031 от 24 марта 2015 года.
+              анализа данных, основанная Яндексом. Оказывает услуги на основании
+              Лицензии № 036031 от 24 марта 2015 года.
             </p>
             <p class="footer__text">
               Документ о прохождении обучения по программе дополнительного
@@ -1133,26 +1150,29 @@
             </p>
             <p class="footer__text">© 2022 АНО ДПО «ШАД», ООО «Яндекс»</p>
           </div>
-          <div class="footer__navigation">
-            <p class="footer__column-title">О нас</p>
-            <nav class="footer__links">
-              <a href="" class="footer__link">Правовая информация</a>
-              <a href="" class="footer__link">Корпоративным клиентам</a>
-              <a href="" class="footer__link">Отзывы</a>
-              <a href="" class="footer__link">Помощь</a>
-              <a href="" class="footer__link">Лицензия</a>
-              <a href="" class="footer__link">Для СМИ</a>
-            </nav>
-          </div>
-          <div class="footer__vacancy">
-            <p class="footer__column-title">Стать частью команды</p>
-            <nav class="footer__links">
-              <a href="" class="footer__link">Вакансии</a>
-              <a href="" class="footer__link">Стать наставником</a>
-            </nav>
+          <div class="footer__mobile-reverse">
+            <div class="footer__navigation">
+              <p class="footer__column-title">О нас</p>
+              <nav class="footer__links">
+                <a href="https://practicum.yandex.ru/" class="footer__link">Правовая информация</a>
+                <a href="https://practicum.yandex.ru/" class="footer__link">Корпоративным клиентам</a>
+                <a href="https://practicum.yandex.ru/" class="footer__link">Отзывы</a>
+                <a href="https://practicum.yandex.ru/" class="footer__link">Помощь</a>
+                <a href="https://practicum.yandex.ru/" class="footer__link">Лицензия</a>
+                <a href="https://practicum.yandex.ru/" class="footer__link">Для СМИ</a>
+              </nav>
+            </div>
+            <div class="footer__vacancy">
+              <p class="footer__column-title">Стать частью команды</p>
+              <nav class="footer__links">
+                <a href="" class="footer__link">Вакансии</a>
+                <a href="" class="footer__link">Стать наставником</a>
+              </nav>
+            </div>
           </div>
         </div>
       </footer>
+      
     </main>
   </body>
 </html>
