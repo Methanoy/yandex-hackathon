@@ -1,4 +1,5 @@
-import "../../pages/index.scss";
+import './index.scss';
+import '../scripts/carousel.js';
 
 import {
   // selectSingle,
@@ -26,7 +27,7 @@ import {
   imgGirl,
   dutiesListMentor,
   dutiesListReviewer,
-} from "../utils/constants";
+} from "../scripts/utils/constants";
 
 // // Переключение выпадающего списка
 // selectSingleTitle.addEventListener("click", () => {
