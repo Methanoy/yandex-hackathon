@@ -1,0 +1,134 @@
+///main
+.videos {
+  max-height: 1024px;
+  max-width: 1440px;
+  padding: 100px 0 100px 120px;
+  background-color: #f7f7f8;
+  position: relative;
+}
+
+.videos__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0 0 43px 0;
+}
+
+.videos__button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 26px;
+  margin: 0 28px 0 0;
+  transition: background-color 0.8s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.videos__button_left {
+  background-image: url(../../images/videos__button-left.svg);
+}
+
+.videos__button_right {
+  background-image: url(../../images/videos__button-right.svg);
+}
+
+.videos__button:hover {
+  background-color: #fcd559;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
+}
+
+.videos__arrow-image {
+  width: 240px;
+  height: 80px;
+  position: absolute;
+  top: 219px;
+  left: 340px;
+  margin: 0;
+}
+
+.videos__cards {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  margin: 40px 0 0 0;
+}
+
+.videos__card {
+  max-height: fit-content;
+  margin-right: 19px;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 555px;
+  height: fit-content;
+  max-width: 488px;
+}
+
+.videos__iframe {
+  border-radius: 24px;
+  width: 100%;
+  height: 312px;
+  background-size: cover;
+  display: block;
+  object-fit: cover;
+}
+
+.videos__author {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #262626;
+  margin: 13px 16px 5px 16px;
+}
+
+.videos__job {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 16px 10px 16px;
+}
+
+.videos__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #262626;
+  margin: 0 16px;
+}
+
+/* Анимация слайдов: */
+.item {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .videos__arrow-image {
+    display: none;
+  }
+
+  .videos__title {
+    font-size: 30px;
+  }
+
+  .videos {
+    padding: 64px 20px;
+  }
+
+  .videos__button {
+    margin: 0 12px 0 0;
+  }
+}

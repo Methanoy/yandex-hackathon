@@ -1,0 +1,140 @@
+.faq {
+  max-height: 1557px;
+  max-width: 1440px;
+  padding: 127px 121px 0 121px;
+  background-color: #f7f7f8;
+}
+
+.faq__title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 120%;
+  margin: 0 0 110px 0;
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+.faq__questions {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faq__text {
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 61%;
+  line-height: 120%;
+  padding-top: 6px;
+}
+
+.faq__summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq__summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+.faq__summary::marker {
+  display: none;
+}
+
+.faq__summary {
+  display: flex;
+  padding: 0 0 25px 0;
+  cursor: pointer;
+  border-bottom: 2px solid #858585;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  max-width: 1200px;
+  justify-content: space-between;
+  transition: opacity 0.5s ease-in-out;
+  align-items: center;
+  background-color: #f7f7f8;
+}
+
+.faq__summary:after {
+  content: url(../../images/faq__plus.svg);
+  transition: transform 0.7s;
+  width: 82px;
+  height: 82px;
+  margin: 0;
+  text-align: center;
+}
+
+.faq__summary:hover:after {
+  content: url(../../images/faq__plus_black.svg);
+  width: 82px;
+  height: 82px;
+  margin: 0;
+  padding: 0;
+}
+
+.faq__details[open] > .faq__summary:after {
+  transform: rotateZ(-45deg);
+}
+
+.faq__details[open] summary ~ * {
+  animation: sweep 0.8s ease;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.faq__details {
+  display: block;
+  margin-bottom: 29px;
+}
+
+@media screen and (max-width: 600px) {
+  .faq__summary {
+    font-size: 30px;
+  }
+
+  .faq__text {
+    line-height: 130%;
+    font-size: 16px;
+    background-color: white;
+    width: 335px;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px 16px;
+  }
+
+  .faq {
+    padding: 0 20px 0 20px;
+  }
+
+  .faq__summary:after {
+    content: url(../../images/faq__plus_small.svg);
+    width: 44px;
+    height: 44px;
+  }
+  .faq__summary:hover:after {
+    content: url(../../images/faq__plus_black_small.jpg);
+    width: 44px;
+    height: 44px;
+  }
+
+  .faq__title {
+    font-size: 30px;
+    margin-bottom: 64px;
+  }
+
+  .faq__container {
+    padding-bottom: 65px;
+  }
+}

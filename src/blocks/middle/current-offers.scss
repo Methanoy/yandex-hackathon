@@ -1,0 +1,328 @@
+// current-offers
+.current-offers {
+  padding: 60px 110px 115px;
+}
+
+.current-offers__container {
+  position: relative;
+  max-width: 380px;
+}
+
+.current-offers__btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 365px;
+  height: 48px;
+  margin: 40px 0 80px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.current-offers__btn {
+  width: 100%;
+  width: 176px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  margin: 6px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.current-offers__btn_disabled {
+  background: transparent;
+}
+
+.current-offers__btn_enabled {
+  background-color: #fff;
+  box-shadow: 0px 1px 4px 1px rgba(36, 36, 36, 0.07);
+}
+
+.current-offers__arrow-img::before {
+  position: absolute;
+  top: -75%;
+  right: -60%;
+  content: url('../../images/team-roles/twisted-arrow.svg');
+}
+
+.current-offers__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.current-offers__summary {
+  display: flex;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  max-width: 1200px;
+  padding-bottom: 45px;
+  justify-content: space-between;
+  animation: sweep 0.5s ease-in-out;
+}
+
+.current-offers__summary:after {
+  content: url(../../images/faq__plus.svg);
+  transition: transform 0.9s;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  margin: 0;
+}
+
+.current-offers__summary:hover:after {
+  content: url(../../images/faq__plus_black_small.jpg);
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  margin: 0;
+}
+
+.current-offers__details {
+  display: block;
+  margin-bottom: 46px;
+}
+
+.current-offers__details[open] > .current-offers__summary:after {
+  transform: rotate(-45deg);
+}
+
+.current-offers__details[open] .current-offers__summary ~ * {
+  animation: ease 0.5s ease-in-out;
+}
+
+
+
+.current-offers__summary::-webkit-details-marker {
+  display: none;
+}
+
+.current-offers__summary::-moz-list-bullet {
+  list-style-type: none;
+}
+
+.current-offers__summary::marker {
+  display: none;
+}
+
+.current-offers__summary::marker {
+  display: none;
+}
+
+.current-offers__summary-btn {
+  background-image: url('../../images/faq__plus.svg');
+  width: 55px;
+  height: 55px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.current-offers__summary-title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.current-offers__faculty {
+  list-style: none;
+  max-width: 1200px;
+  margin: 0;
+}
+
+.current-offers__vacancy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 72px;
+}
+
+.current-offers__vacancy-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+}
+
+.current-offers__vacancy-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 28px 0 0;
+}
+
+.current-offers__vacancy-description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 16px 0 20px;
+}
+
+.current-offers__vacancy-btn {
+  width: 285px;
+  height: 60px;
+  border: none;
+  border-radius: 120px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+  .current-offers__faculty {
+    min-width: 375px;
+  }
+
+  .current-offers__arrow-img::before {
+    display: none;
+  }
+
+  .current-offers__summary-title {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .current-offers__summary {
+    display: flex;
+    align-items: center;
+    animation: none;
+    padding-bottom: 15px;
+  }
+
+  .current-offers__faculty {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .current-offers {
+    padding: 32px 20px 32px;
+  }
+
+  .current-offers__btns-container {
+    width: 335px;
+    margin: 24px 0 40px;
+  }
+
+  .current-offers__btn {
+    width: 160px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  }
+
+  .current-offers__faculty {
+    width: 335px;
+    min-height: 56px;
+    min-width: 0;
+    padding: 12.5px 0;
+    border-bottom: 1px solid #000;
+  }
+
+  .current-offers__summary-title {
+    font-size: 24px;
+    line-height: 1.3;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 0 12px;
+  }
+
+  .current-offers__summary {
+    display: flex;
+    border: none;
+    width: 335px;
+    align-items: none;
+    animation: none;
+  }
+
+  .current-offers__summary:after {
+    content: url('../../images/current-offers/current-offers__cross_open.svg');
+    width: 32px;
+    height: 32px;
+    padding-bottom: 15px;
+  }
+
+  .current-offers__summary:hover:after {
+    content: url('../../images/current-offers/current-offers__cross_close.svg');
+    transition: none;
+  }
+
+  .current-offers__summary-btn {
+    background-image: none;
+  }
+
+  .current-offers__vacancy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-top: 12px4;
+  }
+
+  .current-offers__vacancy-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 335px;
+    justify-content: flex-start;
+  }
+
+  .current-offers__vacancy-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 28px 0 0;
+    padding: 0 0 0 16px;
+  }
+
+  .current-offers__vacancy-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 12px 0 18px;
+    padding: 0 0 0 16px;
+  }
+
+  .current-offers__vacancy-btn {
+    width: 285px;
+    margin: 0 0 20px 16px;
+    align-self: flex-start;
+    height: 60px;
+    border: none;
+    border-radius: 120px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .current-offers__btns-container {
+    width: 335px;
+    margin: 24px 0 40px;
+  }
+
+  .current-offers__details[open] > .current-offers__summary:after {
+    transform: none;
+  }
+
+  .current-offers__details[open] .current-offers__summary ~ * {
+    animation: none;
+  }
+
+}
+

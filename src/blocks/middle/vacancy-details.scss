@@ -1,0 +1,133 @@
+//vacancy-details
+.vacancy-details {
+  padding: 148px 110px 160px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.vacancy-details__title {
+  font-weight: 500;
+  font-size: 62px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.vacancy-details__container {
+  display: flex;
+  margin-top: 160px;
+  column-gap: 122px;
+}
+
+.vacancy-details__subtitle {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+.vacancy-details__offer {
+  max-width: 592px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vacancy-details__offer-section:first-child {
+  margin-top: 0;
+}
+
+.vacancy-details__offer-section {
+  margin-top: 90px;
+}
+
+.vacancy-details__conditions-list {
+  list-style: none;
+  padding: 0;
+}
+
+.vacancy-details__condition-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.vacancy-details__condition {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .vacancy-details__title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .vacancy-details__container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    row-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .vacancy-details__offer-section {
+    margin-top: 40px;
+  }
+
+  .vacancy-details {
+    height: 240vh;
+    width: 250vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vacancy-details__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    align-self: center;
+    text-align: center;
+  }
+
+  .vacancy-details__condition-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 72px 0 24px;
+    padding: 0;
+  }
+
+  .vacancy-details__container {
+    max-width: 335px;
+    margin-top: 58px;
+    row-gap: 32px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .vacancy-details__subtitle {
+    display: none;
+  }
+
+  .vacancy-details__condition {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-top: 12px;
+  }
+}

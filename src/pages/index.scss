@@ -1,0 +1,24 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/YS-Text.css);
+
+//upper
+@import url(../blocks/top/header.scss);
+@import url(../blocks/top/main-page.scss);
+@import url(../blocks/top/benefits.scss);
+@import url(../blocks/top/faculties.scss);
+@import url(../blocks/top/process.scss);
+@import url(../blocks/top/constants.scss);
+@import url(../blocks/top/carousel.scss);
+//middle
+@import url(../blocks/middle/general.scss);
+@import url(../blocks/middle/team-roles.scss);
+@import url(../blocks/middle/current-offers.scss);
+@import url(../blocks/middle/vacancy-details.scss);
+@import url(../blocks/middle/no-vacancy.scss);
+@import url(../blocks/middle/success-popup.scss);
+//bottom
+@import url(../blocks/bottom/footer.scss);
+@import url(../blocks/bottom/faq.scss);
+@import url(../blocks/bottom/errors.scss);
+@import url(../blocks/bottom/videos.scss);
+
