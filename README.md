@@ -31,3 +31,4 @@
 375px - 600px - 768px - 951px - 1440px
 
 ## [Github Pages](https://methanoy.github.io/yandex-hackathon/)
+
