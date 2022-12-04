@@ -1,275 +1,456 @@
 <!-- не добавлять тег link со ссылкой на стили -->
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yandex hackathon</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yandex hackathon</title>
-</head>
-
-<body class="page">
-  <header class="header">
-    <a href="https://practicum.yandex.ru/" target="_blank"><img class="header__logo"
-        src="<%=require('./images/logo.svg')%>" alt="Яндекс Практикум"></a>
-    <nav class="header__navigation">
-      <a class="header__link" href="#">Направления</a>
-      <a class="header__link" href="#">Роли</a>
-      <a class="header__link" href="#">Предложения</a>
-      <a class="header__link" href="#">FAQ</a>
-    </nav>
-  </header>
-  <main class="page">
-    <section class="main-page">
-      <div class="main-page__info">
-        <h1 class="main-page__title">Станьте наставником или ревьювером</h1>
-        <p class="main-page__message">
-          Делитесь своим опытом в программировании, анализе данных,
-          менеджменте, маркетинге или дизайне и получайте дополнительный
-          доход.
-        </p>
-        <img class="main-page__image" src="<%=require('./images/main-page/people.webp')%>" alt="Парень и девушка">
-        <a class="main-page__button" href="#">Хочу делиться знаниями</a>
-      </div>
-    </section>
-
-    <section class="benefits">
-      <h2 class="benefits__title">В роли эксперта Практикума вы будете</h2>
-      <div class="benefits__section">
-        <div class="benefit benefit_size_big">
-          <h3 class="benefit__name">Менять жизнь людей к лучшему</h3>
-          <p class="benefit__description">Тысячи наших студентов нуждаются в ваших знаниях и опыте — не бойтесь ими
-            делиться.</p>
-          <img class="benefit__image" src="<%=require('./images/benefits/pic-robot.svg')%>" alt="Робот">
-        </div>
-        <div class="benefit benefit_size_big">
-          <h3 class="benefit__name">Иметь доход в среднем от 35 до 50 тысяч руб. в месяц</h3>
-          <p class="benefit__description">Удаленно, 2–3 часа в день, график выберете сами.</p>
-          <img class="benefit__image" src="<%=require('./images/benefits/pic-yoda.png')%>" alt="Медитирующий Йода">
-        </div>
-      </div>
-      <div class="benefits__section">
-        <div class="benefit benefit_size_small">
-          <h3 class="benefit__name">Общаться в EdTech</h3>
-          <p class="benefit__description">Станете частью сообщества экспертов и посмотрите на мир онлайн-образования
-            изнутри</p>
-        </div>
-        <div class="benefit benefit_size_small">
-          <h3 class="benefit__name">Учиться новому</h3>
-          <p class="benefit__description">Узнаете, как давать обратную связь, выступать на публике и мотивировать людей
+  <body class="page">
+    <header class="header">
+      <a href="https://practicum.yandex.ru/" target="_blank"
+        ><img
+          class="header__logo"
+          src="<%=require('./images/logo.svg')%>"
+          alt="Логотип школы Яндекс Практикум"
+      /></a>
+      <nav class="header__navigation">
+        <a class="header__link" href="#">Направления</a>
+        <a class="header__link" href="#">Роли</a>
+        <a class="header__link" href="#">Предложения</a>
+        <a class="header__link" href="#">FAQ</a>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="main-page">
+        <div class="main-page__info">
+          <h1 class="main-page__title">Станьте наставником или ревьювером</h1>
+          <p class="main-page__message">
+            Делитесь своим опытом в программировании, анализе данных,
+            менеджменте, маркетинге или дизайне и получайте дополнительный
+            доход.
           </p>
-        </div>
-        <div class="benefit benefit_size_small">
-          <h3 class="benefit__name">Развивать личный бренд</h3>
-          <p class="benefit__description">Публикуйте статьи в блоге Практикума и выступайте на мероприятиях, чтобы о вас
-            узнали как об эксперте</p>
-        </div>
-        <div class="benefit benefit_size_small">
-          <h3 class="benefit__name">Расти внутри роли</h3>
-          <p class="benefit__description">Вы сможете стать старшим наставником или сеньор-ревьювером</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- benefits в мобильной версии -->
-    <section class="carousel">
-      <h2 class="benefits__title">В роли эксперта Практикума вы будете</h2>
-      <div class="carousel__section">
-        <div class="carousel__element benefit">
-          <h3 class="benefit__name">Получать доход в среднем <br>
-            30–55 тысяч рублей в месяц</h3>
-          <p class="benefit__description">Работая удалённо 2–3 часа в день, график выбираете сами</p>
-          <img class="benefit__image" src="<%=require('./images/benefits/pic-yoda-mobile.png')%>"
-            alt="Медитирующий Йода">
-        </div>
-        <div class="carousel__element benefit">
-          <h3 class="benefit__name">Менять жизнь людей к лучшему</h3>
-          <p class="benefit__description">Тысячи наших студентов нуждаются в ваших знаниях и опыте — не бойтесь
-            ими
-            делиться.</p>
-          <img class="benefit__image" src="<%=require('./images/benefits/pic-robot-mobile.svg')%>" alt="Робот">
-        </div>
-        <div class="carousel__element benefit">
-          <h3 class="benefit__name">Общаться в EdTech</h3>
-          <p class="benefit__description">Станете частью сообщества экспертов и посмотрите на мир
-            онлайн-образования
-            изнутри</p>
-          <img class="benefit__image" src="<%=require('./images/benefits/ed-tech-mobile.svg')%>" alt="Человек и робот">
-        </div>
-        <div class="carousel__element benefit">
-          <h3 class="benefit__name">Учиться новому</h3>
-          <p class="benefit__description">Узнаете, как давать обратную связь, выступать на публике и мотивировать
-            людей
-          </p>
-          <img class="benefit__image" src="<%=require('./images/benefits/exercise-mobile.svg')%>" alt="Человек с ноутбуком">
-        </div>
-        <div class="carousel__element benefit">
-          <h3 class="benefit__name">Развивать личный бренд</h3>
-          <p class="benefit__description">Публикуйте статьи в блоге Практикума и выступайте на мероприятиях,
-            чтобы о вас
-            узнали как об эксперте</p>
-          <img class="benefit__image" src="<%=require('./images/benefits/rabbits-mobile.svg')%>" alt="Зайцы в лодке">
-        </div>
-        <div class="carousel__element benefit">
-          <h3 class="benefit__name">Расти внутри роли</h3>
-          <p class="benefit__description">Вы сможете стать старшим наставником или сеньор-ревьювером</p>
-          <img class="benefit__image" src="<%=require('./images/benefits/surf-mobile.svg')%>" alt="Человек на волне">
-        </div>
-      </div>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__dot breadcrumbs__dot_active"></li>
-        <li class="breadcrumbs__dot"></li>
-        <li class="breadcrumbs__dot"></li>
-        <li class="breadcrumbs__dot"></li>
-        <li class="breadcrumbs__dot"></li>
-        <li class="breadcrumbs__dot"></li>
-      </ul>
-    </section>
-
-    <section class="faculties">
-      <h2 class="faculties__title">Помогаем развиваться по направлениям</h2>
-      <div class="faculties__container">
-        <div class="faculty">
-          <h3 class="faculty__name">Менеджмент</h3>
-          <p class="faculty__description">Управление проектами, командами и IT-рекрутмент</p>
-          <a class="faculty__button">Подробнее</a>
-          <a class="faculty__arrow" href="#"><img src="<%=require('./images/faculties/arrow.svg')%>" alt="Стрелка"></a>
-          <img class="faculty__image" src="<%=require('./images/faculties/pic-management.svg')%>" alt="Пирамида из людей">
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Дизайн</h3>
-          <p class="faculty__description">Графический, коммуникационный, для интерфейсов и продуктов</p>
-          <a class="faculty__button">Подробнее</a>
-          <a class="faculty__arrow" href="#"><img src="<%=require('./images/faculties/arrow.svg')%>" alt="Стрелка"></a>
-          <img class="faculty__image" src="<%=require('./images/faculties/pic-design.svg')%>" alt="Человек, переходящий из одной двери в другую">
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Анализ данных</h3>
-          <p class="faculty__description">SQL, аналитика, Data Science и архитектура данных</p>
-          <a class="faculty__button">Подробнее</a>
-          <a class="faculty__arrow" href="#"><img src="<%=require('./images/faculties/arrow.svg')%>" alt="Стрелка"></a>
-          <img class="faculty__image" src="<%=require('./images/faculties/pic-data-analysis.svg')%>" alt="Робот">
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Маркентинг</h3>
-          <p class="faculty__description">Интернет-маркетинг и управление трафиком</p>
-          <a class="faculty__button">Подробнее</a>
-          <a class="faculty__arrow" href="#"><img src="<%=require('./images/faculties/arrow.svg')%>" alt="Стрелка"></a>
-          <img class="faculty__image" src="<%=require('./images/faculties/pic-marketing.svg')%>" alt="Человек с лейкой">
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Программирование</h3>
-          <p class="faculty__description">Тестирование, фронтенд, бэкенд, DevOps и алгоритмы</p>
-          <a class="faculty__button">Подробнее</a>
-          <a class="faculty__arrow" href="#"><img src="<%=require('./images/faculties/arrow.svg')%>" alt="Стрелка"></a>
-          <img class="faculty__image" src="<%=require('./images/faculties/pic-programming.svg')%>" alt="Механизм">
-        </div>
-        <div class="faculty">
-          <h3 class="faculty__name">Все курсы</h3>
-          <p class="faculty__description">76 программ для обучения онлайн</p>
-          <a class="faculty__button">Подробнее</a>
-          <a class="faculty__arrow" href="#"><img src="<%=require('./images/faculties/arrow.svg')%>" alt="Стрелка"></a>
-          <img class="faculty__image" src="<%=require('./images/faculties/pic-all.svg')%>" alt="Чашка">
-        </div>
-      </div>
-    </section>
-
-    <section class="process">
-      <h2 class="process__title">Как стать экспертом Практикума</h2>
-      <div class="stages">
-        <div class="stage stage_number_one">
-          <img class="stage__image stage__image_number_one" src="<%=require('./images/process/stage-one.svg')%>"
-            alt="Очки">
-          <p class="stage__name">Выберите роль</p>
-          <p class="stage__description">Определитесь с курсом и поймите, что ближе: быть наставником или ревьюером</p>
-        </div>
-        <div class="stage stage_number_two">
-          <img class="stage__image stage__image_number_two" src="<%=require('./images/process/stage-two.svg')%>"
-            alt="Человек">
-          <p class="stage__name">Заполните заявку</p>
-          <p class="stage__description">Начать можно прямо сейчас. Даже если нет вакансий, мы свяжемся с вами</p>
-        </div>
-        <div class="stage stage_number_three">
-          <img class="stage__image stage__image_number_three" src="<%=require('./images/process/stage-three.svg')%>"
-            alt="Путь">
-          <p class="stage__name">Пройдите обучение</p>
-          <p class="stage__description">Пригласим на двухнедельное бесплатное обучение для прокачки софтов</p>
-        </div>
-        <div class="stage stage_number_four">
-          <img class="stage__image stage__image_number_four" src="<%=require('./images/process/stage-four.svg')%>"
-            alt="Люди, смотрящие на график">
-          <p class="stage__name">Делитесь знаниями</p>
-          <p class="stage__description">Студенты Практикума ждут поддержки опытных коллег на курсах</p>
-        </div>
-      </div>
-      <div class="start">
-        <p class="start__text">Станьте частью команды и вдохновляйте своих первых студентов</p>
-        <a class="start__button" href="#">Стать частью команды</a>
-        <img class="start__image start__image_left" src="<%=require('./images/process/dinasaur-left.svg')%>"
-          alt="Динозавр">
-        <img class="start__image start__image_right" src="<%=require('./images/process/dinasaur-right.svg')%>"
-          alt="Динозавр">
-      </div>
-    </section>
-
-    <!-- process в мобильной версии -->
-    <section class="carousel">
-      <h2 class="process__title">Как стать экспертом Практикума</h2>
-      <div class="carousel__section">
-        <div class="carousel__element stage stage_number_one">
-          <img class="stage__image stage__image_number_one" src="<%=require('./images/process/stage-one.svg')%>"
-            alt="Очки">
-          <p class="stage__name">Выберите роль</p>
-          <p class="stage__description">Определитесь с курсом и поймите, что ближе: быть наставником или ревьюером</p>
-        </div>
-        <div class="carousel__element stage stage_number_two">
-          <img class="stage__image stage__image_number_two" src="<%=require('./images/process/stage-two.svg')%>"
-            alt="Человек">
-          <p class="stage__name">Заполните заявку</p>
-          <p class="stage__description">Начать можно прямо сейчас. Даже если нет вакансий, мы свяжемся с вами</p>
-        </div>
-        <div class="carousel__element stage stage_number_three">
-          <img class="stage__image stage__image_number_three" src="<%=require('./images/process/stage-three.svg')%>"
-            alt="Путь">
-          <p class="stage__name">Пройдите обучение</p>
-          <p class="stage__description">Пригласим на двухнедельное бесплатное обучение для прокачки софтов</p>
-        </div>
-        <div class="carousel__element stage stage_number_four">
-          <img class="stage__image stage__image_number_four" src="<%=require('./images/process/stage-four.svg')%>"
-            alt="Люди, смотрящие на график">
-          <p class="stage__name">Делитесь знаниями</p>
-          <p class="stage__description">Студенты Практикума ждут поддержки опытных коллег на курсах</p>
-        </div>
-      </div>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__dot breadcrumbs__dot_active"></li>
-        <li class="breadcrumbs__dot"></li>
-        <li class="breadcrumbs__dot"></li>
-        <li class="breadcrumbs__dot"></li>
-      </ul>
-      <div class="start">
-        <p class="start__text">Станьте частью команды Практикума и вдохновляйте своих первых студентов</p>
-        <a class="start__button" href="#">Стать частью команды</a>
-        <img class="start__image start__image_left" src="<%=require('./images/process/dinasaur-left-mobile.svg')%>"
-          alt="Динозавр">
-        <img class="start__image start__image_right" src="<%=require('./images/process/dinasaur-right-mobile.svg')%>"
-          alt="Динозавр">
-      </div>
-    </section>
-
-          <section class="team-roles">
-            <div class="team-roles__img-container">
-              <img
-              src="<%=require('./images/team-roles/roles-girl.webp')%>"
-              class="team-roles__img team-roles__img-girl"
-              alt="Молодой улыбающийся парень с телефоном в руках"
-            />
           <img
-          src="<%=require('./images/team-roles/roles-boy.webp')%>"
-          class="team-roles__img team-roles__img-boy team-roles_hidden"
-          alt="Молодой улыбающийся парень с телефоном в руках"
-        />
+            class="main-page__image"
+            src="<%=require('./images/main-page/people.webp')%>"
+            alt="Парень и девушка"
+          />
+          <a class="main-page__button" href="#">Хочу делиться знаниями</a>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <h2 class="benefits__title">В роли эксперта Практикума вы будете</h2>
+        <div class="benefits__section">
+          <div class="benefit benefit_size_big">
+            <h3 class="benefit__name">Менять жизнь людей к лучшему</h3>
+            <p class="benefit__description">
+              Тысячи наших студентов нуждаются в ваших знаниях и опыте — не
+              бойтесь ими делиться.
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/pic-robot.svg')%>"
+              alt="Робот"
+            />
+          </div>
+          <div class="benefit benefit_size_big">
+            <h3 class="benefit__name">
+              Иметь доход в среднем от 35 до 50 тысяч руб. в месяц
+            </h3>
+            <p class="benefit__description">
+              Удаленно, 2–3 часа в день, график выберете сами.
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/pic-yoda.png')%>"
+              alt="Медитирующий Йода"
+            />
+          </div>
+        </div>
+        <div class="benefits__section">
+          <div class="benefit benefit_size_small">
+            <h3 class="benefit__name">Общаться в EdTech</h3>
+            <p class="benefit__description">
+              Станете частью сообщества экспертов и посмотрите на мир
+              онлайн-образования изнутри
+            </p>
+          </div>
+          <div class="benefit benefit_size_small">
+            <h3 class="benefit__name">Учиться новому</h3>
+            <p class="benefit__description">
+              Узнаете, как давать обратную связь, выступать на публике и
+              мотивировать людей
+            </p>
+          </div>
+          <div class="benefit benefit_size_small">
+            <h3 class="benefit__name">Развивать личный бренд</h3>
+            <p class="benefit__description">
+              Публикуйте статьи в блоге Практикума и выступайте на мероприятиях,
+              чтобы о вас узнали как об эксперте
+            </p>
+          </div>
+          <div class="benefit benefit_size_small">
+            <h3 class="benefit__name">Расти внутри роли</h3>
+            <p class="benefit__description">
+              Вы сможете стать старшим наставником или сеньор-ревьювером
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- benefits в мобильной версии -->
+      <section class="carousel">
+        <h2 class="benefits__title">В роли эксперта Практикума вы будете</h2>
+        <div class="carousel__section">
+          <div class="carousel__element benefit">
+            <h3 class="benefit__name">
+              Получать доход в среднем <br />
+              30–55 тысяч рублей в месяц
+            </h3>
+            <p class="benefit__description">
+              Работая удалённо 2–3 часа в день, график выбираете сами
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/pic-yoda-mobile.png')%>"
+              alt="Медитирующий Йода"
+            />
+          </div>
+          <div class="carousel__element benefit">
+            <h3 class="benefit__name">Менять жизнь людей к лучшему</h3>
+            <p class="benefit__description">
+              Тысячи наших студентов нуждаются в ваших знаниях и опыте — не
+              бойтесь ими делиться.
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/pic-robot-mobile.svg')%>"
+              alt="Робот"
+            />
+          </div>
+          <div class="carousel__element benefit">
+            <h3 class="benefit__name">Общаться в EdTech</h3>
+            <p class="benefit__description">
+              Станете частью сообщества экспертов и посмотрите на мир
+              онлайн-образования изнутри
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/ed-tech-mobile.svg')%>"
+              alt="Человек и робот"
+            />
+          </div>
+          <div class="carousel__element benefit">
+            <h3 class="benefit__name">Учиться новому</h3>
+            <p class="benefit__description">
+              Узнаете, как давать обратную связь, выступать на публике и
+              мотивировать людей
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/exercise-mobile.svg')%>"
+              alt="Человек с ноутбуком"
+            />
+          </div>
+          <div class="carousel__element benefit">
+            <h3 class="benefit__name">Развивать личный бренд</h3>
+            <p class="benefit__description">
+              Публикуйте статьи в блоге Практикума и выступайте на мероприятиях,
+              чтобы о вас узнали как об эксперте
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/rabbits-mobile.svg')%>"
+              alt="Зайцы в лодке"
+            />
+          </div>
+          <div class="carousel__element benefit">
+            <h3 class="benefit__name">Расти внутри роли</h3>
+            <p class="benefit__description">
+              Вы сможете стать старшим наставником или сеньор-ревьювером
+            </p>
+            <img
+              class="benefit__image"
+              src="<%=require('./images/benefits/surf-mobile.svg')%>"
+              alt="Человек на волне"
+            />
+          </div>
+        </div>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__dot breadcrumbs__dot_active"></li>
+          <li class="breadcrumbs__dot"></li>
+          <li class="breadcrumbs__dot"></li>
+          <li class="breadcrumbs__dot"></li>
+          <li class="breadcrumbs__dot"></li>
+          <li class="breadcrumbs__dot"></li>
+        </ul>
+      </section>
+
+      <section class="faculties">
+        <h2 class="faculties__title">Помогаем развиваться по направлениям</h2>
+        <div class="faculties__container">
+          <div class="faculty">
+            <h3 class="faculty__name">Менеджмент</h3>
+            <p class="faculty__description">
+              Управление проектами, командами и IT-рекрутмент
+            </p>
+            <a class="faculty__button">Подробнее</a>
+            <a class="faculty__arrow" href="#"
+              ><img
+                src="<%=require('./images/faculties/arrow.svg')%>"
+                alt="Стрелка"
+            /></a>
+            <img
+              class="faculty__image"
+              src="<%=require('./images/faculties/pic-management.svg')%>"
+              alt="Пирамида из людей"
+            />
+          </div>
+          <div class="faculty">
+            <h3 class="faculty__name">Дизайн</h3>
+            <p class="faculty__description">
+              Графический, коммуникационный, для интерфейсов и продуктов
+            </p>
+            <a class="faculty__button">Подробнее</a>
+            <a class="faculty__arrow" href="#"
+              ><img
+                src="<%=require('./images/faculties/arrow.svg')%>"
+                alt="Стрелка"
+            /></a>
+            <img
+              class="faculty__image"
+              src="<%=require('./images/faculties/pic-design.svg')%>"
+              alt="Человек, переходящий из одной двери в другую"
+            />
+          </div>
+          <div class="faculty">
+            <h3 class="faculty__name">Анализ данных</h3>
+            <p class="faculty__description">
+              SQL, аналитика, Data Science и архитектура данных
+            </p>
+            <a class="faculty__button">Подробнее</a>
+            <a class="faculty__arrow" href="#"
+              ><img
+                src="<%=require('./images/faculties/arrow.svg')%>"
+                alt="Стрелка"
+            /></a>
+            <img
+              class="faculty__image"
+              src="<%=require('./images/faculties/pic-data-analysis.svg')%>"
+              alt="Робот"
+            />
+          </div>
+          <div class="faculty">
+            <h3 class="faculty__name">Маркентинг</h3>
+            <p class="faculty__description">
+              Интернет-маркетинг и управление трафиком
+            </p>
+            <a class="faculty__button">Подробнее</a>
+            <a class="faculty__arrow" href="#"
+              ><img
+                src="<%=require('./images/faculties/arrow.svg')%>"
+                alt="Стрелка"
+            /></a>
+            <img
+              class="faculty__image"
+              src="<%=require('./images/faculties/pic-marketing.svg')%>"
+              alt="Человек с лейкой"
+            />
+          </div>
+          <div class="faculty">
+            <h3 class="faculty__name">Программирование</h3>
+            <p class="faculty__description">
+              Тестирование, фронтенд, бэкенд, DevOps и алгоритмы
+            </p>
+            <a class="faculty__button">Подробнее</a>
+            <a class="faculty__arrow" href="#"
+              ><img
+                src="<%=require('./images/faculties/arrow.svg')%>"
+                alt="Стрелка"
+            /></a>
+            <img
+              class="faculty__image"
+              src="<%=require('./images/faculties/pic-programming.svg')%>"
+              alt="Механизм"
+            />
+          </div>
+          <div class="faculty">
+            <h3 class="faculty__name">Все курсы</h3>
+            <p class="faculty__description">76 программ для обучения онлайн</p>
+            <a class="faculty__button">Подробнее</a>
+            <a class="faculty__arrow" href="#"
+              ><img
+                src="<%=require('./images/faculties/arrow.svg')%>"
+                alt="Стрелка"
+            /></a>
+            <img
+              class="faculty__image"
+              src="<%=require('./images/faculties/pic-all.svg')%>"
+              alt="Чашка"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="process">
+        <h2 class="process__title">Как стать экспертом Практикума</h2>
+        <div class="stages">
+          <div class="stage stage_number_one">
+            <img
+              class="stage__image stage__image_number_one"
+              src="<%=require('./images/process/stage-one.svg')%>"
+              alt="Очки"
+            />
+            <p class="stage__name">Выберите роль</p>
+            <p class="stage__description">
+              Определитесь с курсом и поймите, что ближе: быть наставником или
+              ревьюером
+            </p>
+          </div>
+          <div class="stage stage_number_two">
+            <img
+              class="stage__image stage__image_number_two"
+              src="<%=require('./images/process/stage-two.svg')%>"
+              alt="Человек"
+            />
+            <p class="stage__name">Заполните заявку</p>
+            <p class="stage__description">
+              Начать можно прямо сейчас. Даже если нет вакансий, мы свяжемся с
+              вами
+            </p>
+          </div>
+          <div class="stage stage_number_three">
+            <img
+              class="stage__image stage__image_number_three"
+              src="<%=require('./images/process/stage-three.svg')%>"
+              alt="Путь"
+            />
+            <p class="stage__name">Пройдите обучение</p>
+            <p class="stage__description">
+              Пригласим на двухнедельное бесплатное обучение для прокачки софтов
+            </p>
+          </div>
+          <div class="stage stage_number_four">
+            <img
+              class="stage__image stage__image_number_four"
+              src="<%=require('./images/process/stage-four.svg')%>"
+              alt="Люди, смотрящие на график"
+            />
+            <p class="stage__name">Делитесь знаниями</p>
+            <p class="stage__description">
+              Студенты Практикума ждут поддержки опытных коллег на курсах
+            </p>
+          </div>
+        </div>
+        <div class="start">
+          <p class="start__text">
+            Станьте частью команды и вдохновляйте своих первых студентов
+          </p>
+          <a class="start__button" href="#">Стать частью команды</a>
+          <img
+            class="start__image start__image_left"
+            src="<%=require('./images/process/dinasaur-left.svg')%>"
+            alt="Динозавр"
+          />
+          <img
+            class="start__image start__image_right"
+            src="<%=require('./images/process/dinasaur-right.svg')%>"
+            alt="Динозавр"
+          />
+        </div>
+      </section>
+
+      <!-- process в мобильной версии -->
+      <section class="carousel">
+        <h2 class="process__title">Как стать экспертом Практикума</h2>
+        <div class="carousel__section">
+          <div class="carousel__element stage stage_number_one">
+            <img
+              class="stage__image stage__image_number_one"
+              src="<%=require('./images/process/stage-one.svg')%>"
+              alt="Очки"
+            />
+            <p class="stage__name">Выберите роль</p>
+            <p class="stage__description">
+              Определитесь с курсом и поймите, что ближе: быть наставником или
+              ревьюером
+            </p>
+          </div>
+          <div class="carousel__element stage stage_number_two">
+            <img
+              class="stage__image stage__image_number_two"
+              src="<%=require('./images/process/stage-two.svg')%>"
+              alt="Человек"
+            />
+            <p class="stage__name">Заполните заявку</p>
+            <p class="stage__description">
+              Начать можно прямо сейчас. Даже если нет вакансий, мы свяжемся с
+              вами
+            </p>
+          </div>
+          <div class="carousel__element stage stage_number_three">
+            <img
+              class="stage__image stage__image_number_three"
+              src="<%=require('./images/process/stage-three.svg')%>"
+              alt="Путь"
+            />
+            <p class="stage__name">Пройдите обучение</p>
+            <p class="stage__description">
+              Пригласим на двухнедельное бесплатное обучение для прокачки софтов
+            </p>
+          </div>
+          <div class="carousel__element stage stage_number_four">
+            <img
+              class="stage__image stage__image_number_four"
+              src="<%=require('./images/process/stage-four.svg')%>"
+              alt="Люди, смотрящие на график"
+            />
+            <p class="stage__name">Делитесь знаниями</p>
+            <p class="stage__description">
+              Студенты Практикума ждут поддержки опытных коллег на курсах
+            </p>
+          </div>
+        </div>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__dot breadcrumbs__dot_active"></li>
+          <li class="breadcrumbs__dot"></li>
+          <li class="breadcrumbs__dot"></li>
+          <li class="breadcrumbs__dot"></li>
+        </ul>
+        <div class="start">
+          <p class="start__text">
+            Станьте частью команды Практикума и вдохновляйте своих первых
+            студентов
+          </p>
+          <a class="start__button" href="#">Стать частью команды</a>
+          <img
+            class="start__image start__image_left"
+            src="<%=require('./images/process/dinasaur-left-mobile.svg')%>"
+            alt="Динозавр"
+          />
+          <img
+            class="start__image start__image_right"
+            src="<%=require('./images/process/dinasaur-right-mobile.svg')%>"
+            alt="Динозавр"
+          />
+        </div>
+      </section>
+
+      <section class="team-roles">
+        <div class="team-roles__img-container">
+          <img
+            src="<%=require('./images/team-roles/roles-girl.webp')%>"
+            class="team-roles__img team-roles__img-girl"
+            alt="Молодая задумчивая девушка"
+          />
+          <img
+            src="<%=require('./images/team-roles/roles-boy.webp')%>"
+            class="team-roles__img team-roles__img-boy team-roles_hidden"
+            alt="Молодой улыбающийся парень с телефоном в руках"
+          />
         </div>
         <div class="team-roles__info-container">
           <h2 class="section-title">Роли в нашей команде</h2>
@@ -306,20 +487,17 @@
               Делится опытом и мотивиует своим примером
             </li>
           </ul>
-          <ul class="team-roles__duties-list team-roles__duties-list-reviewer" style='display: none'>
+          <ul
+            class="team-roles__duties-list team-roles__duties-list-reviewer"
+            style="display: none"
+          >
             <!-- плитки Ревьюера -->
-            <li class="team-roles__duty">
-              Проверяет код и проекты студентов
-            </li>
+            <li class="team-roles__duty">Проверяет код и проекты студентов</li>
             <li class="team-roles__duty">
               Простыми словами объясняет им их ошибки
             </li>
-            <li class="team-roles__duty">
-              Дает корректирующую обратную связь
-            </li>
-            <li class="team-roles__duty">
-              Оценивает работы — зачёт/незачёт
-            </li>
+            <li class="team-roles__duty">Дает корректирующую обратную связь</li>
+            <li class="team-roles__duty">Оценивает работы — зачёт/незачёт</li>
           </ul>
         </div>
       </section>
@@ -413,7 +591,8 @@
                       Таких предложений пока нет
                     </h3>
                     <p class="current-offers__vacancy-description">
-                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда появятся места
+                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда
+                      появятся места
                     </p>
                   </div>
                   <button
@@ -426,6 +605,7 @@
               </ul>
             </details>
           </li>
+
           <li class="current-offers__faculty">
             <details class="current-offers__details">
               <summary class="current-offers__summary">
@@ -438,7 +618,8 @@
                       Таких предложений пока нет
                     </h3>
                     <p class="current-offers__vacancy-description">
-                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда появятся места
+                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда
+                      появятся места
                     </p>
                   </div>
                   <button
@@ -454,7 +635,8 @@
                       Таких предложений пока нет
                     </h3>
                     <p class="current-offers__vacancy-description">
-                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда появятся места
+                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда
+                      появятся места
                     </p>
                   </div>
                   <button
@@ -467,6 +649,7 @@
               </ul>
             </details>
           </li>
+
           <li class="current-offers__faculty">
             <details class="current-offers__details">
               <summary class="current-offers__summary">
@@ -479,7 +662,8 @@
                       Таких предложений пока нет
                     </h3>
                     <p class="current-offers__vacancy-description">
-                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда появятся места
+                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда
+                      появятся места
                     </p>
                   </div>
                   <button
@@ -489,6 +673,9 @@
                     Подробнее
                   </button>
                 </li>
+              </ul>
+            </details>
+          </li>
 
           <li class="current-offers__faculty">
             <details class="current-offers__details">
@@ -502,7 +689,8 @@
                       Таких предложений пока нет
                     </h3>
                     <p class="current-offers__vacancy-description">
-                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда появятся места
+                      Оставьте заявку на эту роль, и мы с вами свяжемся, когда
+                      появятся места
                     </p>
                   </div>
                   <button
@@ -529,7 +717,7 @@
                 <h3 class="vacancy-details__subtitle">
                   Откликнуться на вакансию
                 </h3>
-                <form class="form exist-form">
+                <form id="exist-vacancy-form" class="form exist-form">
                   <input
                     id="vacancy-details__name-input"
                     class="form__input"
@@ -576,30 +764,48 @@
                     autocomplete="off"
                     required
                   />
-                  <label for="vacancy-details-position" class="no-vacancy__label"
-                  >Какое направление вам ближе ?</label
-                >
-                <select id="vacancy-details-position" class="form__input" name="position" form="no-vacancy-form" form required>
-                  <option values="">Должность</option>
-                  <option values="marketing">Маркетинг</option>
-                  <option values="design">Дизайн</option>
-                  <option values="managment">Менеджмент</option>
-                  <option values="programming">Программирование</option>
-                  <option values="data-analitics">Анализ данных</option>
-                </select>
-                <label for="vacancy-details__activity-type" class="no-vacancy__label">Чем вы хотите заниматься ?</label>
-                <select id="vacancy-details__activity-type" class="form__input" name="activity" form required>
-                  <option values="">Вид деятельности</option>
-                  <option values="lectures">Проводить лекции</option>
-                  <option values="review">Проверять учеников</option>
-                  <option values="curriculum">
-                    Разрабатывать учебную программу
-                  </option>
-                  <option values="methodology">
-                    Создавать методические материалы
-                  </option>
-                  <option values="experience">Делиться опытом</option>
-                </select>
+                  <label
+                    for="vacancy-details-position"
+                    class="no-vacancy__label"
+                    >Какое направление вам ближе ?</label
+                  >
+                  <select
+                    id="vacancy-details-position"
+                    class="form__input"
+                    name="position"
+                    form="exist-vacancy-form"
+                    required
+                  >
+                    <option value="">Должность</option>
+                    <option value="marketing">Маркетинг</option>
+                    <option value="design">Дизайн</option>
+                    <option value="managment">Менеджмент</option>
+                    <option value="programming">Программирование</option>
+                    <option value="data-analitics">Анализ данных</option>
+                  </select>
+                  <label
+                    for="vacancy-details__activity-type"
+                    class="no-vacancy__label"
+                    >Чем вы хотите заниматься ?</label
+                  >
+                  <select
+                    id="vacancy-details__activity-type"
+                    class="form__input"
+                    name="activity"
+                    form="exist-vacancy-form"
+                    required
+                  >
+                    <option value="">Вид деятельности</option>
+                    <option value="lectures">Проводить лекции</option>
+                    <option value="review">Проверять учеников</option>
+                    <option value="curriculum">
+                      Разрабатывать учебную программу
+                    </option>
+                    <option value="methodology">
+                      Создавать методические материалы
+                    </option>
+                    <option value="experience">Делиться опытом</option>
+                  </select>
                   <div class="checkbox-container">
                     <input
                       id="vacancy-details__accept-checkbox"
@@ -625,18 +831,16 @@
                   </button>
                 </form>
                 <button
-                class="form__share-btn"
-                aria-label="Поделиться вакансией"
-              >
-                Поделиться вакансией
-              </button>
+                  class="form__share-btn"
+                  aria-label="Поделиться вакансией"
+                >
+                  Поделиться вакансией
+                </button>
               </div>
               <ul class="vacancy-details__offer">
                 <li class="vacancy-details__offer-section">
+                  <h4 class="vacancy-details__condition-title">Обязанности</h4>
                   <ul class="vacancy-details__conditions-list">
-                    <h4 class="vacancy-details__condition-title">
-                      Обязанности
-                    </h4>
                     <li class="vacancy-details__condition">
                       Помощь студентам в учебной деятельности
                     </li>
@@ -652,8 +856,8 @@
                   </ul>
                 </li>
                 <li class="vacancy-details__offer-section">
+                  <h4 class="vacancy-details__condition-title">Требования</h4>
                   <ul class="vacancy-details__conditions-list">
-                    <h4 class="vacancy-details__condition-title">Требования</h4>
                     <li class="vacancy-details__condition">
                       Опыт работы программистом больше трех лет
                     </li>
@@ -669,8 +873,8 @@
                   </ul>
                 </li>
                 <li class="vacancy-details__offer-section">
+                  <h4 class="vacancy-details__condition-title">Условия</h4>
                   <ul class="vacancy-details__conditions-list">
-                    <h4 class="vacancy-details__condition-title">Условия</h4>
                     <li class="vacancy-details__condition">
                       Удалённое сотрудничество и ежемесячное вознаграждение
                     </li>
@@ -704,13 +908,12 @@
                 <img
                   class="no-vacancy__img"
                   src="<%=require('./images/popup/no-vacancy.svg')%>"
-                  title="!!Добавить заглавие!!"
-                  alt="!!Добавить описание картинки!!"
+                  alt="Взбирающийся по приставной лестнице человечек, нарисованный в упрощенном стиле"
                 />
               </div>
             </div>
             <div class="form__container no-vacancy__form-container">
-              <form class="form no-exist-form">
+              <form id="no-exist-vacancy-form" class="form no-exist-form">
                 <input
                   id="no-vacancy__name-input"
                   class="form__input"
@@ -748,13 +951,19 @@
                 <label for="no-vacancy-position" class="no-vacancy__label"
                   >Какое направление вам ближе ?</label
                 >
-                <select id="no-vacancy-position" class="form__input" name="position" form="no-vacancy-form" form required>
-                  <option values="">Должность</option>
-                  <option values="marketing">Маркетинг</option>
-                  <option values="design">Дизайн</option>
-                  <option values="managment">Менеджмент</option>
-                  <option values="programming">Программирование</option>
-                  <option values="data-analitics">Анализ данных</option>
+                <select
+                  id="no-vacancy-position"
+                  class="form__input"
+                  name="position"
+                  form="no-exist-vacancy-form"
+                  required
+                >
+                  <option value="">Должность</option>
+                  <option value="marketing">Маркетинг</option>
+                  <option value="design">Дизайн</option>
+                  <option value="managment">Менеджмент</option>
+                  <option value="programming">Программирование</option>
+                  <option value="data-analitics">Анализ данных</option>
                 </select>
                 <!-- <div class="select" data-state="">
                   <div class="select__title" position-data-default="Position">
@@ -809,18 +1018,26 @@
                     >
                   </div>
                 </div> -->
-                <label for="activity-type" class="no-vacancy__label">Чем вы хотите заниматься ?</label>
-                <select id="activity-type" class="form__input" name="activity" form required>
-                  <option values="">Вид деятельности</option>
-                  <option values="lectures">Проводить лекции</option>
-                  <option values="review">Проверять учеников</option>
-                  <option values="curriculum">
+                <label for="activity-type" class="no-vacancy__label"
+                  >Чем вы хотите заниматься ?</label
+                >
+                <select
+                  id="activity-type"
+                  class="form__input"
+                  name="activity"
+                  form="no-exist-vacancy-form"
+                  required
+                >
+                  <option value="">Вид деятельности</option>
+                  <option value="lectures">Проводить лекции</option>
+                  <option value="review">Проверять учеников</option>
+                  <option value="curriculum">
                     Разрабатывать учебную программу
                   </option>
-                  <option values="methodology">
+                  <option value="methodology">
                     Создавать методические материалы
                   </option>
-                  <option values="experience">Делиться опытом</option>
+                  <option value="experience">Делиться опытом</option>
                 </select>
                 <!-- <div class="select activity-select" data-state="">
               <div class="select__title activity-title" data-default="Activity">Вид деятельности</div>
@@ -871,14 +1088,15 @@
               <img
                 class="success-popup__img"
                 src="<%=require('./images/popup/thumb-up.svg')%>"
-                alt="!!Добавить описание картинки!!"
+                alt="Рука с поднятым вверх пальце в подтверждение успешно отправленной формы"
               />
             </div>
             <h3 class="success-popup__title">
               Спасибо, ваша заявка отправлена
             </h3>
             <p class="success-popup__text">
-              Напишем вам на электронную почту <br /> через 1-2 рабочих дня
+              Напишем вам на электронную почту <br />
+              через 1-2 рабочих дня
             </p>
             <button class="success-popup__btn">Вернуться на главную</button>
           </div>
@@ -890,7 +1108,7 @@
           <img
             src="<%=require('./images/errors__404.png')%>"
             class="errors__image"
-            alt="404"
+            alt="Ошибка 404"
           />
           <div class="errors__text-block">
             <h2 class="errors__title">О, нет! Страница не найдена</h2>
@@ -927,6 +1145,7 @@
         <img
           src="<%=require('./images/videos__arrow.svg')%>"
           class="videos__arrow-image"
+          alt="Декоративная стрелка"
         />
 
         <div class="videos__cards">
@@ -1110,10 +1329,12 @@
           <img
             src="<%=require('./images/footer__ya.svg')%>"
             class="footer__logo_ya"
+            alt="Логотип компании Яндекс"
           />
           <img
             src="<%=require('./images/footer__praktikum.svg')%>"
             class="footer__logo_prak"
+            alt="Логотип школы Яндекс Практикум"
           />
         </div>
 
@@ -1121,16 +1342,20 @@
 
         <div class="footer__block">
           <div class="footer__info">
-            <p class="footer__column-title" id="call">Звонок по России бесплатный</p>
+            <p class="footer__column-title" id="call">
+              Звонок по России бесплатный
+            </p>
             <div class="footer__socials">
               <p class="footer_journal">Журнал</p>
               <img
                 src="<%=require('./images/footer__vk.svg')%>"
                 class="footer__social-icons"
+                alt="Логотип компании Вконтакте"
               />
               <img
                 src="<%=require('./images/footer__telegram.svg')%>"
                 class="footer__social-icons_bigger"
+                alt="Логотип компании Телеграмм"
               />
             </div>
             <p class="footer__text">
@@ -1154,12 +1379,24 @@
             <div class="footer__navigation">
               <p class="footer__column-title">О нас</p>
               <nav class="footer__links">
-                <a href="https://practicum.yandex.ru/" class="footer__link">Правовая информация</a>
-                <a href="https://practicum.yandex.ru/" class="footer__link">Корпоративным клиентам</a>
-                <a href="https://practicum.yandex.ru/" class="footer__link">Отзывы</a>
-                <a href="https://practicum.yandex.ru/" class="footer__link">Помощь</a>
-                <a href="https://practicum.yandex.ru/" class="footer__link">Лицензия</a>
-                <a href="https://practicum.yandex.ru/" class="footer__link">Для СМИ</a>
+                <a href="https://practicum.yandex.ru/" class="footer__link"
+                  >Правовая информация</a
+                >
+                <a href="https://practicum.yandex.ru/" class="footer__link"
+                  >Корпоративным клиентам</a
+                >
+                <a href="https://practicum.yandex.ru/" class="footer__link"
+                  >Отзывы</a
+                >
+                <a href="https://practicum.yandex.ru/" class="footer__link"
+                  >Помощь</a
+                >
+                <a href="https://practicum.yandex.ru/" class="footer__link"
+                  >Лицензия</a
+                >
+                <a href="https://practicum.yandex.ru/" class="footer__link"
+                  >Для СМИ</a
+                >
               </nav>
             </div>
             <div class="footer__vacancy">
@@ -1172,7 +1409,6 @@
           </div>
         </div>
       </footer>
-      
     </main>
   </body>
 </html>
